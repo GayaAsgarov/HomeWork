@@ -1,0 +1,36 @@
+header{
+    width: 100%;
+    background-color: #3E8CDC;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    .header-container{
+        width: 80%;
+        height: 85px;
+        nav{
+            height: 85px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .logo{
+                font-size: 30px;
+                color: #FEFFFF;
+                span{
+                    margin-right: 8px;
+                }
+            }
+            ul{
+                width: 55%;
+                display: flex;
+                justify-content: space-between;
+                a{
+                    text-decoration: none;
+                    color: #FEFFFF;
+                }
+                #home{
+                    color: black;
+                }
+            }   
+        }
+    }
+}
