@@ -1,0 +1,32 @@
+.services{
+    width: 100%;
+    height: 330px;
+    display: flex;
+    align-items: center;
+    .services-container{
+        width: 83%;
+        height: 230px;
+        border: 1px solid rgb(202, 201, 201);
+        .row{
+            width: 100%;
+            height: 230px;
+            justify-content: space-between;
+            align-items: center;
+            .col-3{
+                width: 291px;
+                height: 133px;
+                i{
+                    font-size: 40px;
+                    color: #fcb800;
+                }
+                h3{
+                    font-size: 18px;
+                }
+                p{
+                    font-size: 14px;
+                    color: #595959;
+                }
+            }
+        }
+    }
+}

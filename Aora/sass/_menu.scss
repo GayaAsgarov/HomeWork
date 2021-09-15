@@ -1,0 +1,68 @@
+.menu{
+    width: 100%;
+    height: 49.14px;
+    .menu-container{
+        width: 83%;
+        height: 49px;
+        .row{
+            height: 49px;
+            .departments{
+                width: 180px;
+                a{
+                    color: #000;
+                    font-weight: bold;
+                    text-decoration: none;
+                    font-size: 14px;
+                    margin-left: -10px;
+                    i{
+                        color: #666;
+                    }
+                }
+            }
+            .home{
+                width: 72px;
+                border-bottom: 3px solid #fcb800;
+                &:hover{
+                    i{
+                        transform: rotate(180deg);
+                        transition: transform .5s;
+                    }
+                }
+                a{
+                    font-size: 14px;
+                    margin-left: -10px;
+                    text-decoration: none;
+                    color: #232323;
+                }
+            }
+            .promotion{
+                width: 107px;
+                @include divs-menu();
+            }
+            .shop{
+                width: 60px;
+                @include divs-menu();
+            }
+            .blog{
+                width: 56px;
+                @include divs-menu();
+            }
+            .page{
+                width: 59px;
+                @include divs-menu();
+            }
+            .element{
+                width: 91px;
+                @include divs-menu();
+            }
+            .sale{
+                width: 80px;
+                @include divs-menu();
+            }
+            .recent{
+                width: 140px;
+                @include divs-menu();
+            }
+        }
+    }
+}

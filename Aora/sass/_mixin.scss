@@ -1,0 +1,16 @@
+@mixin divs-menu {
+    &:hover{
+        border-bottom: 3px solid #fcb800;
+        transition: border .5s;
+        i{
+            transform: rotate(180deg);
+            transition: transform .5s;
+        }
+    }
+    a{
+        font-size: 14px;
+        margin-left: -10px;
+        text-decoration: none;
+        color: #666666;
+    }
+}

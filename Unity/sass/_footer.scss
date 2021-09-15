@@ -1,0 +1,116 @@
+.footer{
+    background-color: #000;
+    width: 100%;
+    height: 547px;
+    .footer-con{
+        height: 547px;
+        .footer-top{
+            height: 300px;
+            width: 1300px;
+            .footer-left{
+                width: 66%;
+                height: 547px;
+                .foot-left-mid{
+                    width: 100%;
+                    height: 200px;
+                    .language{
+                        width: 205px;
+                        height: 200px;
+                        h5{
+                            font-size: 14px;
+                            color: #fff;
+                        }
+                        a{
+                            color: #757575;
+                            font-size: 14px;
+                            text-decoration: none;
+                            &:hover{
+                                color: #4790E6;
+                            }
+                        }
+                    }
+                }
+            }
+            .footer-right{
+                margin-top: 80px;
+                h5{
+                    font-size: 14px;
+                    color: #fff;
+                }
+                .i-email{
+                    width: 300px;
+                    height: 40px;
+                    background-color: #000;
+                    border: 2px solid #757575;
+                    border-radius: 5px;
+                    padding-left: 10px;
+                }
+                button{
+                    width: 100px;
+                    height: 40px;
+                    background-color: #2196f3;
+                    color: #fff;
+                    font-size: 16px;
+                    border: none;
+                    border-radius: 5px;
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+                form{
+                    a{
+                        text-decoration: none;
+                    }
+                }
+                .contacts{
+                    width: 150px;
+                    a{
+                        text-decoration: none;
+                        color: grey;
+                        i{
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        .footer-bot{
+            border-bottom: 1px solid grey;
+            .language{
+                width: 205px;
+                height: 150px;
+                h5{
+                    font-size: 14px;
+                    color: #fff;
+                }
+                a{
+                    color: #757575;
+                    font-size: 14px;
+                    text-decoration: none;
+                    &:hover{
+                        color: #4790E6;
+                    }
+                }
+            }
+        }
+        .end{
+            width: 100%;
+            margin-top: 50px;
+            .left{
+                width: 1035px;
+                height: 40px;
+                div{
+                    font-size: 12px;
+                    color: #bdbdbd;
+                    a{
+                        color: #4284D3;
+                        text-decoration: none;
+                    }
+                }
+            }
+            .right{
+
+            }
+        }
+    }
+}

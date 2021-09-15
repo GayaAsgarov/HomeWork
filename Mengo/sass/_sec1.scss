@@ -4,6 +4,7 @@
     margin-top: 15px;
     padding-top: 40px;
     position: relative;
+    
     .bg-circle{
         width: 750px;
         height: 750px;
@@ -12,6 +13,22 @@
         opacity: .3;
         border: 1px solid #000;
         border-radius: 100%;
+        position: relative;
+        span{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 2px solid #000;
+            z-index: 2000;
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            animation: rotate 10s linear infinite;
+        }
+        @keyframes rotate {
+            from{transform: rotateZ(0deg);}
+            to{transform: rotateZ(360deg);}
+        }
     }
     .sec1-container{
         position: absolute;

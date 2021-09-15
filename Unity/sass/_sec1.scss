@@ -1,0 +1,75 @@
+.sec1{
+    .sec1-con{
+        .sec1-top{
+            .sec1-top-1{
+                i{
+                    padding-top: 3px;
+                    margin-right: 10px;
+                }
+            }
+            .sec1-top-2{
+                width: 33%;
+                height: 20px;
+                border-left: 1px solid rgb(192, 189, 189);;
+                border-right: 1px solid rgb(192, 189, 189);
+                padding:0px 80px;
+                i{
+                    padding-top: 3px;
+                    margin-right: 10px;
+                }
+            }
+            .sec1-top-3{
+                i{
+                    padding-top: 3px;
+                    margin-right: 10px;
+                }
+            }
+        }
+        .sec1-bot{
+            width: 100%;
+            height: 370px;
+            .sec1-bot-left{
+                width: 410px;
+                height: 370px;
+                //background-color: #0d306b;
+                background-color: red;
+                border-bottom-left-radius: 5px;
+                border-top-left-radius: 5px;
+                div{
+                    font-size: 14px;
+                    color: #fff;
+                }
+                h3{
+                    font-size: 24px;
+                    color: #fff;
+                    margin: 12px 0px;
+                }
+                p{
+                    font-size: 16px;
+                    color: #fff;
+                }
+                button{
+                    width: 140px;
+                    height: 40px;
+                    background-color: #4994EC;
+                    border: none;
+                    border-radius: 5px;
+                    font-size: 16px;
+                    font-weight: bold;
+                    color: #fff;
+                    &:hover{
+                        background-color: #83C4FA;
+                    }
+                }
+            }
+            .sec1-bot-right{
+                background: url(../img/banner-8050e1f8-0c28-44cc-9128-fa7a46b6ac2a);
+                background-size: cover;
+                width: 890px;
+                height: 370px;
+                border-bottom-right-radius: 5px;
+                border-top-right-radius: 5px;
+            }
+        }
+    }
+}

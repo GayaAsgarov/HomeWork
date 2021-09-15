@@ -1,0 +1,463 @@
+.sec3{
+    width: 100%;
+    height: 600px;
+    .sec3-container{
+        width: 85%;
+        height: 600px;
+        .col-4left{
+            width: 280px;
+            height: 600px;
+            .founder{
+                width: 280px;
+                margin-left: -12px;
+                border: 3px solid #3B86C6;
+                .founder-info{
+                    display: flex;
+                    margin-left: 10px;
+                    margin-top: 5px;
+                    .img{
+                        img{
+                            width: 55px;
+                            height: 55px;
+                            border-radius: 50%;
+                            margin-right: 7px;
+                        }
+                    }
+                    .name{
+                        align-self: center;
+                        margin-left: -1px;
+                        margin-top: 10px;
+                        h5{
+                            font-size: 16px;
+                            color: #000;
+                            font-weight: bold;
+                            margin-bottom: -5px;
+                        }
+                        p{
+                            font-size: 12.8px;
+                            color: #666666;
+                        }
+                    }
+                }
+                .content{
+                    display: flex;
+                    justify-content: space-evenly;
+                    margin-top: 20px;
+                    i{
+                        font-size: 25px;
+                        margin-left: -10px;
+                    }
+                    p{
+                        font-size: 13px;
+                        color: #777777;
+                    }
+                }
+            }
+            .post{
+                width: 280px;
+                height: 388px;
+                margin-left: -12px;
+                margin-top: 20px;
+                background-color: #fff;
+                .photo{
+                    width: 280px;
+                    height: 210px;
+                    background: url(../img/shop4_post3.jpeg)no-repeat;
+                    background-size: cover;
+                    &:hover{
+                        background-size: 300px;
+                        transition: background-size 1s;
+                    }
+                    span{
+                        display: inline-block;
+                        width: 45px;
+                        height: 25px;
+                        color: #fff;
+                        text-align: center;
+                        font-size: 18px;
+                        font-weight: bold;
+                        background-color: #23252A;
+                        margin-left: 5px;
+                        margin-top: 7px;
+                        p{
+                            color: #A7A7A9;
+                            font-size: 11.2px;
+                            font-weight: normal;
+                            background-color: #23252A;
+                            margin-top: -2px;
+                        }
+                    }
+                }
+                h3{
+                    margin-top: 10px;
+                    a{
+                        text-decoration: none;
+                        color: #000;
+                        font-size: 17px;
+                        font-weight: bold;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                p{
+                    font-size: 13px;
+                    color: #777777;
+                }
+                a{
+                    text-decoration: none;
+                    color: #000;
+                    font-weight: bold;
+                    font-size: 11px;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                    i{
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+        .col-8{
+            .row-1{
+                width: 920px;
+                height: 360px;
+                margin-left: 12px;
+                margin-top: 10px;
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid #777;
+                .col-4{
+                    width: 300px;
+                    height: 360px;
+                    h2{
+                        font-size: 16px;
+                        color: #000;
+                        font-weight: bold;
+                    }
+                    img{
+                        width: 84px;
+                        height: 84px;
+                    }
+                }
+                .column1{
+                    .camera{
+                        display: flex;
+                        justify-content: space-between;
+                        h3{
+                            margin-bottom: -2px;
+                            a{
+                                text-decoration: none;
+                                font-size: 14px;
+                                color: #000;
+                                &:hover{
+                                    color: #0088cc;
+                                }
+                            }
+                        }
+                        p{
+                            i{
+                                color: #6A6A6E;
+                            }
+                        }
+                        .price{
+                            font-size: 15px;
+                            color: #000;
+                            font-weight: bold;
+                           margin-top: -10px;
+                        }
+                    }
+                    .bag{
+                        display: flex;
+                        justify-content: space-between;
+                        .info{
+                            margin-right: 58px;
+                            h3{
+                                margin-bottom: -2px;
+                                a{
+                                    text-decoration: none;
+                                    font-size: 14px;
+                                    color: #000;
+                                    &:hover{
+                                        color: #0088cc;
+                                    }
+                                }
+                            }
+                            p{
+                                i{
+                                    color: #6A6A6E;
+                                }
+                            }
+                            .price{
+                                font-size: 15px;
+                                color: #000;
+                                font-weight: bold;
+                                margin-top: -10px;
+                                del{
+                                    font-size: 12px;
+                                    color: #444;
+                                }
+                            }
+                        }
+                    }
+                    .shoes{
+                        display: flex;
+                        justify-content: space-between;
+                        .info{
+                            margin-right: 33px;
+                            h3{
+                                margin-bottom: -2px;
+                                a{
+                                    text-decoration: none;
+                                    font-size: 14px;
+                                    color: #000;
+                                    &:hover{
+                                        color: #0088cc;
+                                    }
+                                }
+                            }
+                            p{
+                                i{
+                                    color: #6A6A6E;
+                                }
+                            }
+                            .price{
+                                font-size: 15px;
+                                color: #000;
+                                font-weight: bold;
+                               margin-top: -10px;
+                            }
+                        }
+                    }
+                }
+                .column2{
+                    .charger{
+                        display: flex;
+                        justify-content: space-between;
+                        .info{
+                            margin-right: 50px;
+                            h3{
+                                margin-bottom: -2px;
+                                a{
+                                    text-decoration: none;
+                                    font-size: 14px;
+                                    color: #000;
+                                    &:hover{
+                                        color: #0088cc;
+                                    }
+                                }
+                            }
+                            p{
+                                i{
+                                    color: #D6D6D6;
+                                }
+                            }
+                            .price{
+                                font-size: 15px;
+                                color: #000;
+                                font-weight: bold;
+                                margin-top: -10px;
+                                del{
+                                    font-size: 12px;
+                                    color: #444;
+                                }
+                            }
+                        }
+                    }
+                    .mouse{
+                        display: flex;
+                        justify-content: space-between;
+                        .info{
+                            margin-right: 45px;
+                            h3{
+                                margin-bottom: -2px;
+                                a{
+                                    text-decoration: none;
+                                    font-size: 14px;
+                                    color: #000;
+                                    &:hover{
+                                        color: #0088cc;
+                                    }
+                                }
+                            }
+                            p{
+                                i{
+                                    color: #6A6A6E;
+                                }
+                            }
+                            .price{
+                                font-size: 15px;
+                                color: #000;
+                                font-weight: bold;
+                                margin-top: -10px;
+                            }
+                        }
+                    }
+                    .bag{
+                        display: flex;
+                        justify-content: space-between;
+                        .info{
+                            margin-right: 45px;
+                            h3{
+                                margin-bottom: -2px;
+                                a{
+                                    text-decoration: none;
+                                    font-size: 14px;
+                                    color: #000;
+                                    &:hover{
+                                        color: #0088cc;
+                                    }
+                                }
+                            }
+                            p{
+                                i{
+                                    color: #6A6A6E;
+                                }
+                            }
+                            .price{
+                                font-size: 15px;
+                                color: #000;
+                                font-weight: bold;
+                               margin-top: -10px;
+                            }
+                        }
+                    }
+                }
+                .column3{
+                    .bag{
+                        display: flex;
+                        justify-content: space-between;
+                        .info{
+                            margin-right: 50px;
+                            h3{
+                                margin-bottom: -2px;
+                                a{
+                                    text-decoration: none;
+                                    font-size: 14px;
+                                    color: #000;
+                                    &:hover{
+                                        color: #0088cc;
+                                    }
+                                }
+                            }
+                            p{
+                                i{
+                                    color: #6A6A6E;
+                                }
+                            }
+                            .price{
+                                font-size: 15px;
+                                color: #000;
+                                font-weight: bold;
+                                margin-top: -10px;
+                                del{
+                                    font-size: 12px;
+                                    color: #444;
+                                }
+                            }
+                        }
+                    }
+                    .laptop{
+                        display: flex;
+                        justify-content: space-between;
+                        .info{
+                            margin-right: 25px;
+                            h3{
+                                margin-bottom: -2px;
+                                a{
+                                    text-decoration: none;
+                                    font-size: 14px;
+                                    color: #000;
+                                    &:hover{
+                                        color: #0088cc;
+                                    }
+                                }
+                            }
+                            p{
+                                i{
+                                    color: #6A6A6E;
+                                }
+                            }
+                            .price{
+                                font-size: 15px;
+                                color: #000;
+                                font-weight: bold;
+                                margin-top: -10px;
+                            }
+                        }
+                    }
+                    .backpack{
+                        display: flex;
+                        justify-content: space-between;
+                        .info{
+                            margin-right: 60px;
+                            h3{
+                                margin-bottom: -2px;
+                                a{
+                                    text-decoration: none;
+                                    font-size: 14px;
+                                    color: #000;
+                                    &:hover{
+                                        color: #0088cc;
+                                    }
+                                }
+                            }
+                            p{
+                                i{
+                                    color: #6A6A6E;
+                                }
+                            }
+                            .price{
+                                font-size: 15px;
+                                color: #000;
+                                font-weight: bold;
+                               margin-top: -10px;
+                               del{
+                                font-size: 12px;
+                                color: #444;
+                            }
+                            }
+                        }
+                    }
+                }
+            }
+            .row-2{
+                width: 920px;
+                height: 220px;
+                margin-left: 12px;
+                display: flex;
+                justify-content: space-between;
+                margin-top: 20px;
+                .col-4{
+                    width: 300px;
+                    text-align: center;
+                    div{
+                        width: 80px;
+                        height: 80px;
+                        border: 2px solid #3C86C6;
+                        border-radius: 50%;
+                        text-align: center;padding-top: 10px;
+                        font-size: 40px;
+                        margin: 0px auto;
+                        color: #3C86C6;
+                    }
+                    h3{
+                        font-size: 16px;
+                        color: #000;
+                        font-weight: bold;
+                        margin-top: 15px;
+                    }
+                    .p1{
+                        font-size: 14px;
+                        color: #555555;
+                        margin-top: -10px;
+                    }
+                    .p2{
+                        font-size: 13px;
+                        color: #777777;
+                    }
+                }
+            }
+        }
+    }
+}

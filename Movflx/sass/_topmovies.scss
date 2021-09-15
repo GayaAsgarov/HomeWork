@@ -1,0 +1,207 @@
+.topmovies{
+    width: 100%;
+    height: 1550px;
+    background-color: #131119;
+    .container{
+        width: 87%;
+        .row1{
+            h5{
+                font-size: 12px;
+                color: #e4d801;
+                font-weight: bold;
+                margin-top: 100px;
+            }
+            h2{
+                font-size: 36px;
+                color: #fff;
+                font-weight: bold;
+                margin-bottom: 30px;
+            }
+            button{
+                width: 120px;
+                height: 53px;
+                background-color: #0D110E;
+                color: #fff;
+                font-size: 13px;
+                font-weight: bold;
+                margin: 0px 10px;
+                border: none;
+                border-radius: 10px;
+                margin-bottom: 70px;
+                span{
+                    color: #e4d801;
+                    display: inline-block;
+                    width: 120px;
+                    border-left: 2px solid #e4d801;
+                    border-right: 2px solid #e4d801;
+                    margin-left: -6px;
+                }
+            }
+        }
+        .row-2{
+            margin-bottom: 40px;
+            .col-3{
+                width: 290px;
+                height: 530.55px;
+                .box{
+                    width: 290px;
+                    height: 411.55px;
+                    margin-left: -12px;
+                    margin-bottom: 15px;
+                }
+                .links{
+                    a{
+                        text-decoration: none;
+                        color: #fff;
+                        font-size: 16px;
+                        font-weight: bold;
+                        margin-left: -12px;
+                        &:hover{
+                            color: #e4d804;
+                            transition: .5s;
+                        }
+                    }
+                    span{
+                        font-size: 14px;
+                        color: #e4d804;
+                    }
+                }
+                .hd{
+                    margin-top: 5px;
+                    margin-left: -12px;
+                    .left{
+                        span{
+                            display: inline-block;
+                            width: 40.05px;
+                            height: 25px;
+                            background-color: transparent;
+                            border: 2px solid #fff;
+                            font-size: 11px;
+                            color: #e4d804;
+                            font-weight: bold;
+                            text-align: center;
+                            padding-top: 2px;
+                        }
+                    }
+                    .right{
+                        font-size: 12px;
+                        span{
+                            color: #bcbcbc;
+                        }
+                        i{
+                            color: #e4d804;
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+            .col1{
+                .box{
+                    background: url(../img/ucm_poster01.jpeg)no-repeat;
+                    background-size: cover;
+                }
+            }
+            .col2{
+                .box{
+                    background: url(../img/ucm_poster02.jpeg)no-repeat;
+                    background-size: cover;
+                }
+            }
+
+            .col3{
+                .box{
+                    background: url(../img/ucm_poster03.jpeg)no-repeat;
+                    background-size: cover;
+                }
+            }
+            .col4{
+                .box{
+                    background: url(../img/ucm_poster04.jpeg)no-repeat;
+                    background-size: cover;
+                }
+            }
+        }
+        .row-3{
+            .col-3{
+                width: 290px;
+                height: 530.55px;
+                .box{
+                    width: 290px;
+                    height: 411.55px;
+                    margin-left: -12px;
+                    margin-bottom: 15px;
+                }
+                .links{
+                    a{
+                        text-decoration: none;
+                        color: #fff;
+                        font-size: 16px;
+                        font-weight: bold;
+                        margin-left: -12px;
+                        &:hover{
+                            color: #e4d804;
+                            transition: .5s;
+                        }
+                    }
+                    span{
+                        font-size: 14px;
+                        color: #e4d804;
+                    }
+                }
+                .hd{
+                    margin-top: 5px;
+                    margin-left: -12px;
+                    .left{
+                        span{
+                            display: inline-block;
+                            width: 40.05px;
+                            height: 25px;
+                            background-color: transparent;
+                            border: 2px solid #fff;
+                            font-size: 11px;
+                            color: #e4d804;
+                            font-weight: bold;
+                            text-align: center;
+                            padding-top: 2px;
+                        }
+                    }
+                    .right{
+                        font-size: 12px;
+                        span{
+                            color: #bcbcbc;
+                        }
+                        i{
+                            color: #e4d804;
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+            .col1{
+                .box{
+                    background: url(../img/ucm_poster05.jpeg)no-repeat;
+                    background-size: cover;
+                }
+            }
+            .col2{
+                .box{
+                    background: url(../img/ucm_poster06.jpeg)no-repeat;
+                    background-size: cover;
+                }
+            }
+
+            .col3{
+                .box{
+                    background: url(../img/ucm_poster07.jpeg)no-repeat;
+                    background-size: cover;
+                }
+            }
+            .col4{
+                .box{
+                    background: url(../img/ucm_poster08.jpeg)no-repeat;
+                    background-size: cover;
+                }
+            }
+        }
+    }
+}

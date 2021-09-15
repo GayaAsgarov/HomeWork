@@ -1,0 +1,162 @@
+header{
+    width: 100%;
+    height: 756px;
+    background: url(../img/banner_bg01.jpg)no-repeat;
+    background-size: cover;
+    .container{
+        width: 87%;
+        height: 756px;
+        .navigation{
+            width: 100%;
+            height: 90px;
+            .logo{
+                img{
+                    width: 151px;
+                    height: 44px;
+                }
+            }
+            .linkItems{
+                //background-color: green;
+                width: 600px;
+                .submenu{
+                    display: none;
+                }
+                li{
+                    list-style: none;
+                    a{
+                        color: #f0f0f0;
+                        font-size: 14px;
+                        font-weight: bold;
+                        &:hover{
+                            color: hsl(57, 97%, 45%);
+                            transition: .5s;
+                        }
+                    }
+                    .home{
+                        color: #e4d804;
+                    }
+                }
+            }
+            .icons{
+                .search{
+                    font-size: 15px;
+                    color: #f0f0f0;
+                }
+                span{
+                    display: inline-block;
+                    height: 16px;
+                    width: 2px;
+                    background-color: #2C3034;
+                }
+                .glob{
+                    font-size: 15px;
+                    color: #e4d804;
+                }
+                .btn-group{
+                    button{
+                        font-size: 15px;
+                        font-weight: bold;
+                        color: #f0f0f0;
+                    }
+                }
+                .btn-sign{
+                    width: 100px;
+                    height: 40px;
+                    border-radius: 20px;
+                    border: 2px solid #e4d804;
+                    color: #f0f0f0;
+                    font-weight: bold;
+                    font-size: 13px;
+                    background-color: transparent;
+                }
+            }
+        }
+        .content{
+            height: 350px;
+            margin-top: 160px;
+            h6{
+                font-size: 26px;
+                color: #e4d804;
+                font-weight: bold;
+            }
+            h2{
+                font-size: 60px;
+                color: #fff;
+                font-weight: bold;
+                span{
+                    color: #e4d804;
+                }
+            }
+            p{
+                color: #e3dfdf;
+                margin-top: 10px;
+                .sp1{
+                    display: inline-block;
+                    width: 50.48px;
+                    height: 25px;
+                    background-color: #fff;
+                    color: #21232b;
+                    font-size: 11px;
+                    font-weight: bold;
+                    text-align: center;
+                    padding: 5px 0px;
+                    margin-right: 5px;
+                }
+                .sp2{
+                    display: inline-block;
+                    width: 40.05px;
+                    height: 25px;
+                    background-color: #21232b;
+                    font-size: 11px;
+                    font-weight: bold;
+                    color: #fff;
+                    text-align: center;
+                    padding: 3px 0px;
+                    border: 2px solid #fff;
+                    margin-right: 10px;
+                }
+                .dram{
+                    color: #e3dfdf;
+                    font-size: 14px;
+                    text-decoration: none;
+                    margin-right: 10px;
+                    &:hover{
+                        color: #e4d804;
+                        transition: .5s;
+                    }
+                }
+                .sp3{
+                    display: inline-block;
+                    margin-right: 10px;
+                }
+                i{
+                    color: #e4d804;
+                    margin-right: 8px;
+                }
+                .clck{
+                    margin-right: 8px;
+                }
+            }
+            .bt{
+                display: inline-block;
+                width: 183.16px;
+                height: 54px;
+                background-color: transparent;
+                text-decoration: none;
+                color: #fff;
+                font-size: 12px;
+                font-weight: bold;
+                border-radius: 25px;
+                border: 3px solid #e4d804;
+                text-align: center;
+                padding: 11px 0px;
+                margin-top: 20px;
+                &:hover{
+                    background-color: #e4d804;
+                    color: #000;
+                    transition: .5s;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,106 @@
+@media screen and (max-width:400px){
+    body{
+        width: 400px;
+    }
+    header{
+        width: 400px;
+    }
+    .sec1{
+        .sec1-con{
+            width: 500px;
+            height: 470px;
+            .sec1-top{
+                display:none !important;
+            }
+            .sec1-bot{
+                display: flex;
+                flex-direction: column-reverse;
+                margin-left: -20px;
+                .sec1-bot-left{
+                    width: 400px;
+                    height: 400px;
+                }
+                .sec1-bot-right{
+                    width: 400px;
+                    height: 183px;
+                    background-size: cover;
+                    background-color: violet;
+                }
+            }
+        }
+    }
+    .sec2{
+        .sec2-bot{
+            width: 400px;
+            display: flex !important;
+            flex-direction: column !important;
+            .card-deck{
+                
+            }
+        }
+    }
+    .sec3{
+        height: 600px;
+        .container{
+            display: flex;
+            flex-direction: column;
+            height: 520px;
+            iframe{
+                width: 400px;
+                height: 200px;
+            }
+        }
+    }
+    .sec4{
+        .sec4-bot{
+            width: 400px;
+            overflow-x: scroll;
+            .sec4-bot-left{
+                .l{
+                    display: none;
+                }
+            }
+        }
+    }
+    .sec7{
+        height: 600px;
+        .container{
+            display: flex;
+            flex-direction: column-reverse;
+            height: 520px;
+            iframe{
+                width: 400px;
+                height: 200px;
+                margin-left: -20px;
+            }
+        }
+    }
+    .sec8{
+        width: 400px;
+        .container{
+            overflow: scroll;
+        }
+    }
+    .sec9{
+        height: 600px;
+        .container{
+            display: flex;
+            flex-direction: column;
+            height: 520px;
+            iframe{
+                width: 400px;
+                height: 200px;
+                margin-left: -20px;
+            }
+        }
+    }
+    .sec10{
+        width: 400px;
+        overflow: scroll;
+    }
+    .footer{
+        width: 400px;
+        height: 600px;
+        overflow: hidden;
+    }
+}

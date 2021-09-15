@@ -1,0 +1,91 @@
+.sec4{
+    .portfolio-row1{
+        margin-bottom: 70px;
+        h5{
+            color: #ff7070;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        h2{
+            font-size: 48px;
+            color: #fff;
+            font-weight: bold;
+        }
+    }
+    .portfolio-row2{
+        margin-bottom: 30px;
+        .row2-col1{
+            height: 425px;
+            margin-right: 30px;
+            width: 830px;
+            border-radius: 10px;
+            background: url(../img/portfilio_1.png)no-repeat;
+            background-size: cover;
+            div{
+                margin-top: 80px;
+                margin-left: 40px;
+                @include portfolio-link();
+            }
+            @include portfolio-p();
+        }
+        .row2-col2{
+            height: 425px;
+            width: 400px;
+            border-radius: 10px;
+            background: url(../img/portfilio_2.png)no-repeat;
+            background-size: cover;
+            div{
+                margin-top: 340px;
+                margin-left: 40px;
+                @include portfolio-link();
+            }
+            @include portfolio-p();
+        }
+    }
+    .portfolio-row3{
+        .row3-col1{
+            width:400px;
+            height: 425px;
+            border-radius: 10px;
+            background: url(../img/portfilio_3.png)no-repeat;
+            background-size: cover;
+            div{
+                margin-top: 340px;
+                margin-left: 40px;
+                @include portfolio-link();
+            }
+            @include portfolio-p();
+        }
+        .row3-col2{
+            margin: 0px 30px;
+            width: 400px;
+            height: 425px;
+            border-radius: 10px;
+            background: url(../img/portfilio_4.png) no-repeat;
+            background-size: cover;
+            &:hover{
+                transition: 0.3s;
+                transform: scale(1);
+            }
+            div{
+                margin-top: 340px;
+                margin-left: 40px;
+                @include portfolio-link();
+            }
+            @include portfolio-p();
+        }
+        .row3-col3{
+            width: 400px;
+            height: 425px;
+            border-radius: 10px;
+            background: url(../img/portfilio_5.png)no-repeat;
+            background-size: cover;
+            div{
+                margin-top: 340px;
+                margin-left: 40px;
+                @include portfolio-link();
+            }
+            @include portfolio-p();
+        }
+    }
+}

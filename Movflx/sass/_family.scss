@@ -1,0 +1,86 @@
+.family{
+    width: 100%;
+    height: 690px;
+    background-color: #fff;
+    .container{
+        width: 87%;
+        height: 690px;
+        .row{
+            height: 690px;
+            .col1{
+                width: 555px;
+                height: 396px;
+                h5{
+                    font-size: 12px;
+                    color: #656363;
+                    span{
+                        display: inline-block;
+                        width: 40px;
+                        height: 3px;
+                        background-color: #e4d804;
+                        margin-bottom: 2px;
+                    }
+                }
+                h2{
+                    font-size: 36px;
+                    color: #1e1b29;
+                    font-weight: bold;
+                }
+                p{
+                    font-size: 14px;
+                    color: #6a6a6a;
+                    margin: 20px 0px;
+                }
+                .facts{
+                    display: flex;
+                    margin-bottom: 20px;
+                    .left{
+                        margin-right: 40px;
+                        h2{
+                            color: transparent;
+                            -webkit-text-stroke:2px #d81c2b;
+                            font-size: 60px;
+                        }
+                    }
+                    .right{
+                        h4{
+                            font-size: 38px;
+                            color: #1e1b29;
+                            font-weight: bold;
+                        }
+                        p{
+                            font-size: 16px;
+                            color: #1e1b29;
+                            font-weight: bold;
+                            margin-top: -10px;
+                        }
+                    }
+                }
+                a{
+                    display: inline-block;
+                    width: 183.16px;
+                    height: 54px;
+                    text-decoration: none;
+                    font-size: 12px;
+                    color: #1e1b29;
+                    font-weight: bold;
+                    background-color: #e4d804;
+                    text-align: center;
+                    padding-top: 15px;
+                    border-radius: 25px;
+                    border: 3px solid #e4d804;
+                    &:hover{
+                        background-color: transparent;
+                        transition: .5s;
+                    }
+                }
+            }
+            .col2{
+                width: 697px;
+                height: 450px;
+                background: url(../img/live_img.png)no-repeat;
+                background-size: cover;
+            }
+        }
+    }
+}

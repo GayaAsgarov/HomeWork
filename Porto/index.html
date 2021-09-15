@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="sass/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <title>Porto Shop 1 - Porto WordPress Demo site</title>
+  </head>
+  <body>
+      <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container header-container">
+                <div class="lang-cur">
+                    <ul class="d-flex">
+                        <li><a href="#" class="lang-link">ENG<i class="fas fa-chevron-down"></i></a>
+                            <div class="sub-menu-lang">
+                                <ul>
+                                    <li><a href="#">ENG</a></li>
+                                    <li><a href="#">FRH</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#" class="cur-link">USD<i class="fas fa-chevron-down"></i></a>
+                            <div class="sub-menu-cur">
+                                <ul>
+                                    <li><a href="#">USD</a></li>
+                                    <li><a href="#">EUR</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu">
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                      <div class="navbar-nav d-flex justify-content-around align-items-center">
+                        <li>WELCOME TO PORTO!</li>
+                        <a class="nav-link" href="#">MY ACCOUNT</a>
+                        <a class="nav-link" href="#">CONTACT US</a>
+                        <a class="nav-link" href="#">MY WISHLIST</a>
+                        <a class="nav-link" href="#">SITE MAP</a>
+                        <a class="nav-link" href="#">CART</a>
+                        <a class="nav-link" href="#">LOG IN</a>
+                        <span></span>
+                        <a href="#" class="link-fb"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="link-tw"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="link-insta"><i class="fab fa-instagram"></i></a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+          </nav>
+      </header>
+      <section class="head-main">
+        <div class="container head-main-container">
+          <div class="row">
+            <div class="col-2 logo">
+              <img src="img/logo_ecomblue_lg.png" alt="logo">
+            </div>
+            <div class="col-5 search">
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="Search...">
+                <button class="btn btn-drop dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">All Categories</button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="#">Cloth</a></li>
+                  <li><a class="dropdown-item" href="#">Watches</a></li>
+                  <li><a class="dropdown-item" href="#">Dress</a></li>
+                  <li><a class="dropdown-item" href="#">Com</a></li>
+                  <li><a class="dropdown-item" href="#">Headphone</a></li>
+                  <li><a class="dropdown-item" href="#">Fashion</a></li>
+                  <li><a class="dropdown-item" href="#">T-Shirts</a></li>
+                </ul>
+                <button class="btn btn-search" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
+              </div>
+            </div>
+            <div class="col-2 contact">
+              <div class="phone-icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div class="phone-content">
+                <h3>CALL US NOW</h3>
+                <p>+123 5678 890</p>
+              </div>
+            </div>
+            <div class="col-1 user">
+              <i class="far fa-user"></i>
+            </div>
+            <div class="col-1 like">
+              <i class="fas fa-heart"></i>
+            </div>
+            <div class="col-1 bag">
+              <i class="fas fa-shopping-bag bag-icon"></i>
+              <span>0</span>
+              <i class="fas fa-chevron-down arrow-icon"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="service">
+        <div class="container service-container">
+          <div class="row">
+            <div class="col-4">
+              <div class="service-icon">
+                <i class="fas fa-shipping-fast"></i>
+              </div>
+              <div class="service-content">
+                <h3>FREE SHIPPING & RETURN</h3>
+                <p>Free shipping on all orders over $99</p>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="service-icon">
+                <i class="fas fa-dollar-sign"></i>
+              </div>
+              <div class="service-content">
+                <h3>MONEY BACK GUARANTEE</h3>
+                <p>100% money back guarantee</p>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="service-icon">
+                <i class="fas fa-recycle"></i>
+              </div>
+              <div class="service-content">
+                <h3>ONLINE SUPPORT 24/7</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sec1">
+        <div class="container sec1-container">
+          <div class="row d-flex justify-content-between">
+            <div class="col-4">
+              <div class="title">BROWSE CATEGORIES</div>
+              <ul>
+                <li class="home"><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#"><i class="fas fa-ribbon"></i> Categories</a></li>
+                <li><a href="#"><i class="fas fa-shopping-cart"></i> Products</a></li>
+                <li><a href="#"><i class="far fa-envelope"></i> Features</a></li>
+                <li><a href="#"><i class="fas fa-book-open"></i>Blog</a></li>
+                <li><a href="#"><i class="fas fa-user-friends"></i> About Us</a></li>
+                <li><a href="#"><i class="fas fa-layer-group"></i> Elements</a></li>
+                <li><a href="#"><i class="far fa-star"></i> Buy Porto!</a></li>
+              </ul>
+            </div>
+            <div class="col-8">
+              <h4 class="h4-top">Find the Boundaries. Push Through!</h4>
+              <h2>Summer Sale</h2>
+              <h3>70% OFF</h3>
+              <h4 class="h4-bot">STARTING AT</h4>
+              <b><sup>$</sup>199<sub>99</sub></b>
+              <button>SHOP NOW!</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sec2">
+        <div class="container sec2-container">
+          <div class="row row1">
+            <div class="col-4">
+              <div class="sale text-center">
+                <img src="img/shop1_off.png" alt="pic">
+                <h3><small>UP TO</small>50<sup>%</sup><sub>OFF</sub></h3>
+                <p>Bags,Clothing T-Shirts, Shoes,<br>
+                Watches and much more...</p>
+                <button>VIEW SALE</button>
+              </div>
+              <div class="subscribe text-center">
+                <h4>SUBSCRIBE NEWSLETTER</h4>
+                <p>Get all the latest information on<br>
+                  Events, Sales and Offers.</p>
+                  <i class="fas fa-envelope-open-text"></i>
+                  <input type="email" placeholder="Email address">
+                  <button>SUBSCRIBE</button>
+              </div>
+            </div>
+            <div class="col-8">
+              <div class="row row-1">
+                <div class="col-4 column-1">
+                  <h3>Porto Watches</h3>
+                  <h4><sup><del><b>20%</b></del></sup>30%<sup class="sup-off">OFF</sup></h4>
+                  <button>SHOP NOW</button>
+                </div>
+                <div class="col-4 column-2 text-center">
+                  <h3>DEAL PROMOS</h3>
+                  <h4>STARTING AT $99</h4>
+                  <button>SHOP NOW</button>
+                </div>
+                <div class="col-4 column-3 text-end">
+                  <h3>Handbags</h3>
+                  <h4>STARTING AT $99</h4>
+                  <button>SHOP NOW</button>
+                </div>
+              </div>
+              <div class="row row-2">
+                <div class="col-12">
+                  <h2>FEATURED PRODUCTS</h2>
+                </div>
+              </div>
+              <div class="row row-3 justify-content-between">
+                <div class="col-3 column-1">
+                  <div>
+                    <span>HOT</span>
+                  </div>
+                  <p class="p1"><a href="#">HEADPHONE</a>,<a href="#">WHATCHES</a><button><i class="far fa-heart"></i></button></p>
+                  <h3><a href="#">Black Grey Headset</a></h3>
+                  <p class="p3"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half"></i><i class="fas fa-star" style="color: #d6d6d6;"></i></p>
+                  <p class="p4">$39.00</p>
+                </div>
+                <div class="col-3 column-2">
+                  <div>
+                    <span>HOT</span><br>
+                    <span class="span-red">-13%</span>
+                  </div>
+                  <p class="p1"><a href="#">COM</a>,<a href="#">HEADPHONE</a><button><i class="far fa-heart"></i></button></p>
+                  <h3><a href="#">Battery Charger</a></h3>
+                  <p class="p3"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star" style="color: #d6d6d6;"></i></p>
+                  <p class="p4"><del>$299.00</del>$259.00</p>
+                </div>
+                <div class="col-3 column-3">
+                  <div>
+                    <span>HOT</span><br>
+                    <span class="span-red">-33%</span>
+                  </div>
+                  <p class="p1"><a href="#">COM</a>,<a href="#">T-SHIRTS</a><button><i class="far fa-heart"></i></button></p>
+                  <h3><a href="#">Brown Bag</a></h3>
+                  <p class="p3"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star" style="color: #d6d6d6;"></i></p>
+                  <p class="p4"><del>$299.00</del>$199.00</p>
+                </div>
+                <div class="col-3 column-4">
+                  <div>
+                    <span>HOT</span>
+                  </div>
+                  <p class="p1"><a href="#">COM</a>,<a href="#">T-SHIRTS</a><button><i class="far fa-heart"></i></button></p>
+                  <h3><a href="#">Casual Note Bag</a></h3>
+                  <p class="p3"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star" style="color: #d6d6d6;"></i></p>
+                  <p class="p4">$299.00</p>
+                </div>
+              </div>
+              <div class="row row-4 justify-content-between">
+                <div class="col-2">
+                  <img src="img/new_brand1.png" alt="pic">
+                </div>
+                <div class="col-2">
+                  <img src="img/new_brand2.png" alt="pic">
+                </div>
+                <div class="col-2">
+                  <img src="img/new_brand3.png" alt="pic">
+                </div>
+                <div class="col-2">
+                  <img src="img/new_brand4.png" alt="pic">
+                </div>
+                <div class="col-2">
+                  <img src="img/new_brand5.png" alt="pic">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sec3">
+        <div class="container sec3-container">
+          <div class="row">
+            <div class="col-4 col-4left">
+              <div class="founder">
+                <div class="founder-info">
+                  <div class="img">
+                    <img src="img/shop2_about_us_person1.jpeg" alt="pic">
+                  </div>
+                  <div class="name">
+                    <h5><strong>John Smith</strong></h5>
+                    <p>CEO & Founder</p>
+                  </div>
+                </div>
+                <div class="content">
+                  <div><i class="fas fa-quote-left"></i></div>
+                  <div><p>Lorem ipsum dolor sit amet,<br>
+                  consectetur elitad dipiscing<br>
+                Cras non placerat mi.</p></div>
+                </div>
+              </div>
+              <div class="post">
+                <div class="photo">
+                  <span>26<br><p>FEB</p></span>
+                </div>
+                <h3><a href="#">Post Format Video</a></h3>
+                <p>Leap into electronic typesetting,<br>
+                remaining essentially unchanged. It was<br>
+              popularised in the 1960s with...</p>
+              <a href="#">read more <i class="fas fa-chevron-right"></i></a>
+              </div>
+            </div>
+            <div class="col-8">
+              <div class="row row-1">
+                <div class="col-4 column1">
+                  <h2>TOP RATED PRODUCTS</h2>
+                  <div class="camera">
+                    <div class="img">
+                      <img src="img/product-4-85x85.jpeg" alt="pic">
+                    </div>
+                    <div class="info">
+                      <h3><a href="#">Porto Extended Camera</a></h3>
+                      <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                      <p class="price">$599.00</p>
+                    </div>
+                  </div>
+                  <div class="bag">
+                    <div class="img">
+                      <img src="img/product-68-85x85.jpeg" alt="pic">
+                    </div>
+                    <div class="info">
+                      <h3><a href="#">Blue BackPack</a></h3>
+                      <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                      <p class="price"><del>$299.00</del>$599.00</p>
+                    </div>
+                  </div>
+                  <div class="shoes">
+                    <div class="img">
+                      <img src="img/product-34-85x85.jpeg" alt="pic">
+                    </div>
+                    <div class="info">
+                      <h3><a href="#">Casual Blue Shoes</a></h3>
+                      <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                      <p class="price">$101.00 - $108.00</p>
+                    </div>
+                  </div>
+
+
+                </div>
+                <div class="col-4 column2">
+                  <h2>BEST SELLING PRODUCTS</h2>
+                  <div class="charger">
+                    <div class="img">
+                      <img src="img/product-7-85x85.jpeg"alt="pic">
+                    </div>
+                    <div class="info">
+                      <h3><a href="#">Battery Charger</a></h3>
+                      <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                      <p class="price"><del>$299.00</del>$599.00</p>
+                    </div>
+                  </div>
+                  <div class="mouse">
+                    <div class="img">
+                      <img src="img/product-9-85x85.jpeg" alt="pic">
+                    </div>
+                    <div class="info">
+                      <h3><a href="#">Computer Mouse</a></h3>
+                      <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star" style="color:#D6D6D6;"></i></p>
+                      <p class="price">$55.00</p>
+                    </div>
+                  </div>
+                  <div class="bag">
+                    <div class="img">
+                      <img src="img/product-55-85x85.jpeg" alt="pic">
+                    </div>
+                    <div class="info">
+                      <h3><a href="#">Casual Note Bag</a></h3>
+                      <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star" style="color:#D6D6D6;"></i></p>
+                      <p class="price">$299.00</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 column3">
+                  <h2>LATEST PRODUCTS</h2>
+                  <div class="bag">
+                    <div class="img">
+                      <img src="img/product-55-85x85.jpeg" alt="pic">
+                    </div>
+                    <div class="info">
+                      <h3><a href="#">Casual Note Bag</a></h3>
+                      <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star" style="color:#D6D6D6;"></i></p>
+                      <p class="price">$299.00</p>
+                    </div>
+                  </div>
+                  <div class="laptop">
+                    <div class="img">
+                      <img src="img/product-56-85x85.jpeg" alt="pic">
+                    </div>
+                    <div class="info">
+                      <h3><a href="#">Laptop Case Bag</a></h3>
+                      <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half"></i></p>
+                      <p class="price">$444.00 - $1,499.00</p>
+                    </div>
+                  </div>
+                  <div class="backpack">
+                    <div class="img">
+                      <img src="img/product-68-85x85.jpeg" alt="pic">
+                    </div>
+                    <div class="info">
+                      <h3><a href="#">Blue BackPack</a></h3>
+                      <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                      <p class="price"><del>$299.00</del>$199.00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row row-2">
+                <div class="col-4 text-center">
+                  <div><i class="fas fa-headphones-alt"></i></div>
+                  <h3>CUSTOMER SUPPORT</h3>
+                  <p class="p1">Need Assistence?</p>
+                  <p class="p2">Lorem ipsum dolor sit amet, consectetur<br>
+                    adipiscing elit. Duis nec vestibulum<br>
+                    magna, et dapib.</p>
+                </div>
+                <div class="col-4">
+                  <div><i class="far fa-credit-card"></i></div>
+                  <h3>SECURED PAYMENT</h3>
+                  <p class="p1">Safe & Fast</p>
+                  <p class="p2">Lorem ipsum dolor sit amet, consectetur<br>
+                    adipiscing elit. Duis nec vestibulum<br>
+                    magna, et dapib.</p>
+                </div>
+                <div class="col-4">
+                  <div><i class="fas fa-undo-alt"></i></div>
+                  <h3>RETURNS</h3>
+                  <p class="p1">Easy & Free</p>
+                  <p class="p2">Lorem ipsum dolor sit amet, consectetur<br>
+                    adipiscing elit. Duis nec vestibulum<br>
+                    magna, et dapib.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="foot">
+        <div class="container foot-container">
+          <div class="row row1">
+            <div class="col-3 column-1">
+              <h3>ABOUT US</h3>
+              <a href="#"><img src="img/logo_ecomwhite.png" alt="pic"></a>
+              <p>Lorem ipsum dolor sit amet, consectetur<br>
+                adipiscing elit. Duis nec vestibulum<br>
+                magna, et dapibus lacus. Duis nec<br>
+                vestibulum magna, et dapibus lacus.</p>
+              <a href="#">read more...</a>
+            </div>
+            <div class="col-3 column-2">
+              <h3>CONTACT INFO</h3>
+              <p>ADDRESS:<br>
+              <span>123 Street Name, City, England</span></p>
+              <p>PHONE:<br>
+              <span>(123) 456-7890</span></p>
+              <p>EMAIL:<br>
+              <a href="#">mail@example.com</a></p>
+              <p>WORKING DAYS/HOURS:<br>
+              <span>Mon - Sun / 9:00 AM - 8:00 PM</span></p>
+              <div class="contact">
+                <div class="fb"><a href="#"><i class="fab fa-facebook-f"></i></a></div>
+                <div class="tw"><a href="#"><i class="fab fa-twitter"></i></a></div>
+                <div class="in"><a href="#"><i class="fab fa-linkedin-in"></i></a></div>
+              </div>
+            </div>
+            <div class="col-3 column-3">
+              <h3>CUSTOMER SERVICE</h3>
+              <a href="#">Help & FAQs</a><br>
+              <a href="#">Order Tracking</a><br>
+              <a href="#">Shipping & Delivery</a><br>
+              <a href="#">Orders History</a><br>
+              <a href="#">Advanced Search</a><br>
+              <a href="#">My Account</a><br>
+              <a href="#">Careers</a><br>
+              <a href="#">About Us</a><br>
+              <a href="#">Corporate Sales</a><br>
+              <a href="#">Privacy</a>
+            </div>
+            <div class="col-3 column-4">
+              <h3>POPULAR TAGS</h3>
+              <a href="#">Bag</a>
+              <a href="#">Black</a>
+              <a href="#">Blue</a>
+              <a href="#">Clothes</a>
+              <a href="#">Fashion</a><br>
+              <a href="#">Hub</a>
+              <a href="#">Jean</a>
+              <a href="#">Shirt</a>
+              <a href="#">Skirt</a>
+              <a href="#">Sports</a><br>
+              <a href="#">Sweater</a>
+              <a href="#">Winter</a>
+
+            </div>
+          </div>
+          <div class="row row2">
+              <p>© Porto eCommerce. 2021. All Rights Reserved</p>
+          </div>
+        </div>
+      </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

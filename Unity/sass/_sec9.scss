@@ -1,0 +1,45 @@
+.sec9{
+    width: 100%;
+    height: 500px;
+    border-bottom: 1px solid rgb(209, 207, 207);
+    .sec9-con{
+        height: 460px;
+        background-color: #212121;
+        .sec9-left{
+
+        }
+        .sec9-right{
+            width: 410px;
+            height: 460px;
+            .sec9-right-content{
+                margin-left: 20px;
+                div{
+                    font-size: 14px;
+                    color: #fff;
+                }
+                h3{
+                    font-size: 24px;
+                    color: #fff;
+                    margin: 12px 0px;
+                }
+                p{
+                    font-size: 14px;
+                    color: #fff;
+                }
+                button{
+                    font-size: 16px;
+                    color: #fff;
+                    font-weight: bold;
+                    background-color: #2196f3;
+                    margin-top: 16px;
+                    padding: 10px 16px;
+                    border: none;
+                    border-radius: 5px;
+                    &:hover{
+                        background-color: #83C4FA;
+                    }
+                }
+            }
+        }
+    }
+}

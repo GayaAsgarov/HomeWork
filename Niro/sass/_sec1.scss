@@ -1,0 +1,46 @@
+.sec1{
+    width: 100%;
+    height: 910px;
+    background: url(../img/dark_banner_bg.png) no-repeat;
+    background-color: #000;
+    background-size: cover;
+    header{
+        padding-top: 20px;
+        .navbar-icons{
+            img{
+                margin-right: 15px;
+                margin-top: -5px;
+                filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(253deg) brightness(107%) contrast(101%);
+            }
+            i{
+                font-size: 17px;
+            }
+        }
+    }
+    .sec1-content{
+        .col-img{
+            padding-left: 620px;
+            margin-top: 100px;
+            .circle{
+                width: 80px;
+                height: 80px;
+                background: linear-gradient(0deg, #fe422f 0%,#fe5196 100%);
+                border-radius: 100%;
+                img{
+                    margin-top: 30px;
+                }
+            }
+        }
+        .col-sm-12{
+            h2{
+                font-size: 90px;
+                color: #fff;
+                span{
+                    background: linear-gradient(0deg, #fe422f 0%,#fe5196 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+        }
+    }
+}
