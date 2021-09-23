@@ -1,0 +1,127 @@
+@import 'reset';
+
+@media screen and (max-width:400px){
+    body{
+        background: #0A1022;
+        font-family: sans-serif;
+    }
+    .top{
+        width: 400px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        color: #dbe6ff;
+        position: relative;
+        .arrow-icon{
+            margin-left: 20px;
+            i{
+                font-size: 25px;
+                cursor: pointer;
+            }
+        }
+        .mode-icon{
+            position: absolute;
+            right:30px;
+            i{
+                font-size: 25px;
+                color: black;
+            }
+        }
+        h2{
+            font-size: 20px;
+            font-weight: 500;
+            padding-left: 110px;
+        }
+    }
+    .music{
+        width: 400px;
+        height: 370px;
+        .music-image{
+            text-align: center;
+            img{
+                width: 261px;
+                height: 261px;
+            }
+        }
+        .music-info{
+            display: flex;
+            text-align: center;
+            align-items: center;
+            margin: 0 115px;
+            position: relative;
+            margin-top: 30px;
+            .music-na{
+                h2{
+                    font-size: 24px;
+                    color: #eaf0ff;
+                }
+                h3{
+                    font-size: 16px;
+                    color: #a5c0ff;
+                    font-weight: 500;
+                    margin-top: 10px;
+                }
+            }
+            .like{
+                position: absolute;
+                top: 15px;
+                right: -80px;
+                i{
+                    font-size: 25px;
+                    color: #a5c0ff;
+                }
+            }
+        }
+    }
+    .settings{
+        width: 400px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        .left{
+            padding-left: 35px;
+            img{
+                width: 13.33px;
+                height: 15.99px;
+            }
+        }
+        .right{
+            padding-right: 35px;
+            #one{
+                width: 14.65px;
+                height: 15.49px;
+            }
+            #two{
+                margin-left: 20px;
+                width: 13.34px;
+                height: 13.34px;
+            }
+        }
+    }
+    .progress-bar{
+        width: 317px;
+        height: 2px;
+        background-color: grey;
+        border-radius: 5px;
+        margin: 30px auto;
+        .progress{
+            width: 100px;
+            height: 2px;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+    }
+    .controls{
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+        button{
+            border: none;
+            background-color: transparent;
+            color: #fff;
+            i{
+                font-size: 30px;
+            }
+        }
+    }
+}

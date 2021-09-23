@@ -1,0 +1,189 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    font-family: sans-serif;
+  }
+  .top {
+    width: 400px;
+    height: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #dbe6ff;
+    position: relative;
+  }
+  .top .arrow-icon {
+    margin-left: 20px;
+  }
+  .top .arrow-icon i {
+    font-size: 25px;
+    cursor: pointer;
+  }
+  .top .mode-icon {
+    position: absolute;
+    right: 30px;
+  }
+  .top .mode-icon i {
+    font-size: 25px;
+    color: black;
+  }
+  .top h2 {
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 110px;
+  }
+  .music {
+    width: 400px;
+    height: 370px;
+  }
+  .music .music-image {
+    text-align: center;
+  }
+  .music .music-image img {
+    width: 261px;
+    height: 261px;
+  }
+  .music .music-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 115px;
+    position: relative;
+    margin-top: 30px;
+  }
+  .music .music-info .music-na h2 {
+    font-size: 24px;
+    color: #eaf0ff;
+  }
+  .music .music-info .music-na h3 {
+    font-size: 16px;
+    color: #a5c0ff;
+    font-weight: 500;
+    margin-top: 10px;
+  }
+  .music .music-info .like {
+    position: absolute;
+    top: 15px;
+    right: -80px;
+  }
+  .music .music-info .like i {
+    font-size: 25px;
+    color: #a5c0ff;
+  }
+  .settings {
+    width: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 30px;
+  }
+  .settings .left {
+    padding-left: 35px;
+  }
+  .settings .left img {
+    width: 13.33px;
+    height: 15.99px;
+  }
+  .settings .right {
+    padding-right: 35px;
+  }
+  .settings .right #one {
+    width: 14.65px;
+    height: 15.49px;
+  }
+  .settings .right #two {
+    margin-left: 20px;
+    width: 13.34px;
+    height: 13.34px;
+  }
+  .progress-bar {
+    width: 317px;
+    height: 2px;
+    background: grey;
+    border-radius: 5px;
+    margin: 30px auto;
+  }
+  .progress-bar .progress {
+    width: 100px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  .controls {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 40px;
+  }
+  .controls button {
+    border: none;
+    background-color: transparent;
+    color: #fff;
+  }
+  .controls button i {
+    font-size: 30px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

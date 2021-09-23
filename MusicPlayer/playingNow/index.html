@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="sass/style.css">
+</head>
+<body>
+    <section class="top">
+        <div class="arrow-icon">
+            <i id="arrw" class="fas fa-arrow-left"></i>
+        </div>
+        <div class="mode-icon" id="modeIcon">
+            <i class="fas fa-moon" id="mode"></i>
+        </div>
+        <h2 id="title">Playing Now</h2>
+    </section>
+    <section class="music">
+        <div class="music-image">
+            <img src="img/Believer.png" alt="pic" id="image">
+        </div>
+        <div class="music-info">
+            <div class="music-na">
+                <h2 id="musname"></h2>
+                <h3 id="musauthor"></h3>
+            </div>
+            <div class="like">
+                <i class="far fa-heart"></i>
+            </div>
+        </div>
+    </section>
+    <section class="settings">
+        <div class="left">
+            <img src="img/vector3.png" alt="pic" id="image">
+        </div>
+        <div class="right">
+            <img src="img/Vector.png" id="one" alt="pic">
+            <img src="img/Vector (1).png" id="two" alt="pic">
+        </div>
+    </section>
+    <div class="progress-bar" id="progressBar">
+        <div class="progress" id="progress"></div>
+    </div>
+
+    <audio src="Believer.mp3" id="audio"></audio>
+
+    <div class="controls">
+        <button id="prev"><i class="fas fa-step-backward"></i></button>
+        <button id="play"><i id="icon" class="fas fa-play"></i></button>
+        <button id="next"><i class="fas fa-step-forward"></i></button>
+    </div>
+
+    <script>
+        const musicName = document.getElementById("musname");
+        const audio = document.getElementById("audio");
+        const image = document.getElementById('image');
+        const musicAuthor = document.getElementById('musauthor');
+        const playBtn = document.getElementById('play');
+        const modeIcon = document.getElementById('modeIcon');
+
+        const musics = ['Moment Apart','Shortwave','Believer'];
+        let musicIndex = 2;
+
+        loadMusic(musics[musicIndex]);
+
+        function loadMusic(music){
+            musicName.innerText = 'music';
+            audio.src = `${music}.mp3`;
+            image.src = `img/${music}.png`;
+            if(musicName.innerText = 'Believer'){
+                musicAuthor.innerText = 'IMAGINE DRAGON';
+            }
+            else if(musicName.innerText = 'Shortwave'){
+                musicAuthor.innerText = 'RYAN GRIGDRY';
+            }
+            else if(musicName.innerText = 'Moment Apart'){
+                musicAuthor.innerText = 'ODESZA';
+            }
+        }
+
+        playBtn.onclick = function (){
+            if(audio.paused){
+                audio.play();
+                document.getElementById('icon').classList.remove('fa-play');
+                document.getElementById('icon').classList.add('fa-pause');
+            }
+            else if(audio.play){
+                audio.pause();
+                document.getElementById('icon').classList.remove('fa-pause');
+                document.getElementById('icon').classList.add('fa-play');
+            }
+        }
+
+        modeIcon.onclick = function(){
+            if(mode.classList.contains('fa-moon')){
+                document.body.style.background = '#0A1022';
+                document.getElementById('mode').classList.remove('fa-moon');
+                document.getElementById('mode').classList.add('fa-sun');
+                document.getElementsByClassName('fa-sun')[0].style.color = 'yellow';
+                document.getElementById('title').style.color = '#dbe6ff';
+                document.getElementById('arrw').style.color = '#dbe6ff';
+                document.getElementById('musname').style.color = '#fff';
+                document.getElementById('prev').style.color = '#fff';
+                document.getElementById('play').style.color = '#fff';
+                document.getElementById('next').style.color = '#fff';
+                document.getElementById('progressBar').style.backgroundColor = 'grey';
+                document.getElementById('progress').style.backgroundColor = '#fff'
+            }
+            else if(mode.classList.contains('fa-sun')){
+                document.body.style.background = '#fff';
+                document.getElementById('mode').classList.remove('fa-sun');
+                document.getElementById('mode').classList.add('fa-moon');
+                document.getElementsByClassName('fa-moon')[0].style.color = 'black';
+                document.getElementById('title').style.color = 'black';
+                document.getElementById('arrw').style.color = 'black';
+                document.getElementById('musname').style.color = 'black';
+                document.getElementById('prev').style.color = '#000';
+                document.getElementById('play').style.color = '#000';
+                document.getElementById('next').style.color = '#000';
+                document.getElementById('progressBar').style.backgroundColor = 'lightgrey';
+                document.getElementById('progress').style.backgroundColor = 'black'
+            }
+        }
+
+        function nextMusic(){
+            musicIndex++;
+            if(musicIndex>musics.length - 1){
+                musicIndex = 0;
+            }
+            loadMusic(musics[musicIndex]);
+            audio.play();
+        }
+
+        function prevMusic(){
+            musicIndex--;
+            if(musicIndex<0){
+                musicIndex = musics.length - 1;
+            }
+            loadMusic(musics[musicIndex]);
+            audio.play();
+        }
+
+        document.getElementById('prev').addEventListener('click',prevMusic);
+
+        document.getElementById('next').addEventListener('click',nextMusic);
+
+        document.getElementById('audio').addEventListener('ended',nextMusic);
+
+    </script>
+</body>
+</html>
