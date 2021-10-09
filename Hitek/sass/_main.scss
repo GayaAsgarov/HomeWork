@@ -1,0 +1,1648 @@
+.main{
+    position: absolute;
+    left: 47px;
+    width: 1393px;
+    .main-top{
+        height: 41px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid rgb(211, 211, 211);
+        .left{
+            display: flex;
+            font-size: 13px;
+            color: #686868;
+        }
+        .right{
+            display: flex;
+            font-size: 16px;
+            color: #333333;
+            cursor: pointer;
+            margin-right: 10px;
+            .user{
+                &:hover{
+                    color: #adacac;
+                    transition: .5s;
+                }
+            }
+            .compare{
+                &:hover{
+                    color: #adacac;
+                    transition: .5s;
+                }
+            }
+            .like{
+                &:hover{
+                    color: #adacac;
+                    transition: .5s;
+                }
+            }
+            .lock{
+                &:hover{
+                    color: #adacac;
+                    transition: .5s;
+                }
+            }
+        }
+        .sep{
+            width: 2px;
+            height: 15px;
+            background:#eaeaea;
+            margin: 0px 5px;
+        }
+    }
+    .main-navigation{
+        height: 100px;
+        display: flex;
+        margin: 0px 15px;
+        align-items: center;
+        justify-content: space-between;
+        position: sticky;
+        top: 0;
+        background: #fff;
+        z-index: 3000000;
+        .logo{
+            width: 130px;
+            height: 40.69px;
+            margin-bottom: 20px;
+        }
+        .search{
+            width: 400px;
+            height: 42px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid rgb(211, 211, 211);
+            font-size: 13px;
+            position: relative;
+            left: 35px;
+            input{
+                border: none;
+                outline: none;
+                background: transparent;
+                position: absolute;
+                left: 40px;
+            }
+            i{
+                font-size: 20px;
+                position: absolute;
+                left: 10px;
+            }
+            select{
+                position: absolute;
+                left: 260px;
+                background: transparent;
+                border: none;
+                outline: none;
+            }
+            .sep{
+                width: 2px;
+                height: 15px;
+                background:#eaeaea;
+                position: absolute;
+                left: 220px;
+            }
+        }
+        .navlinks{
+            width: 400px;
+            ul{
+                display: flex;
+                justify-content: space-between;
+                li{
+                    a{
+                        text-decoration: none;
+                        font-size: 14px;
+                        color: #333333;
+                    }
+                }
+
+                .home-content{
+                    display: none;
+                    position: absolute;
+                    background: #fff;
+                    top: 100px;
+                    z-index: 4000;
+                    width: 1393px;
+                    height: 400px;
+                    left: 0px;
+                    border-top: 1px solid rgb(211, 211, 211);
+                    img{
+                        width: 300px;
+                        height: 200px;
+                        cursor: pointer;
+                    }
+                    p{
+                        font-size: 16px;
+                        color: grey;
+                        margin-bottom: 10px;
+                    }
+                    h5{
+                        font-size: 20px;
+                    }
+                }
+                .shop-content{
+                    display: none;
+                    position: absolute;
+                    background: #fff;
+                    top: 100px;
+                    z-index: 4000;
+                    width: 1393px;
+                    height: 500px;
+                    left: 0px;
+                    border-top: 1px solid rgb(211, 211, 211);
+                    .prod{
+                        cursor: pointer;
+                        img{
+                            width: 200px;
+                            height: 100px;
+                            margin-bottom: 15px;
+                        }
+                        h4{
+                            font-size: 24px;
+                            padding-top: 25px;
+                            margin-bottom: 15px;
+                        }
+                        p{
+                            font-size: 16px;
+                            margin: 15px 0px;
+                        }
+                    }
+                    .seperate{
+                        width: 2px;
+                        height: 350px;
+                        background: rgb(221, 221, 221);
+                    }
+                    .featured{
+                        cursor: pointer;
+                        h4{
+                            font-size: 24px;
+                            margin-bottom: 30px;
+                        }
+                        .products{
+                            display: flex;
+                            i{
+                                color: rgb(236, 236, 107);
+                            }
+                            h6{
+                                font-size: 16px;
+                            }
+                            p{
+                                font-size: 13px;
+                                color: rgb(12, 149, 12);
+                                span{
+                                    font-size: 11px;
+                                    text-decoration:line-through;
+                                    color: rgb(170, 167, 167);
+                                }
+                            }
+                            .tablet{
+                                display: flex;
+                                margin-bottom: 10px;
+                            }
+                            .album{
+                                display: flex;
+                                margin-bottom: 10px;
+                            }
+                            .ms{
+                                display: flex;
+                                margin-bottom: 10px;
+                            }
+                            .smartphone{
+                                display: flex;
+                                margin-bottom: 10px;
+                            }
+                            .gaming{
+                                display: flex;
+                                margin-bottom: 10px;
+                            }
+                            .pro{
+                                display: flex;
+                                margin-bottom: 10px;
+                            }
+                        }
+                    }
+                }
+                .blog-content{
+                    display: none;
+                    position: absolute;
+                    background: #fff;
+                    top: 100px;
+                    z-index: 4000;
+                    width: 1393px;
+                    height: 330px;
+                    left: 0px;
+                    border-top: 1px solid rgb(211, 211, 211);
+                    h4{
+                        font-size: 24px;
+                        padding-top: 20px;
+                        margin-bottom: 15px;
+                    }
+                    p{
+                        font-size: 16px;
+                         color: rgb(197, 194, 194);
+                        margin-bottom: 10px;
+                        cursor: pointer;
+                    }
+                    .security{
+                        height: 250px;
+                        width: 300px;
+                        background: url(../img/vega-banner-1.jpg)no-repeat;
+                        background-size: 270px;
+                        p{
+                            padding-top: 20px;
+                            font-size: 16px;
+                            cursor: text;
+                        }
+                        h3{
+                            font-size: 30px;
+                            margin: 20px 0px;
+                        }
+                        a{
+                            color: black;
+                            &:hover{
+                                color: rgb(107, 107, 107);
+                            }
+                        }
+                    }
+                    .notebook{
+                        height: 250px;
+                        width: 600px;
+                        background: url(../img/vega-blog-9.jpg) no-repeat;
+                        background-size: cover;
+                        position: relative;
+                        &:hover{
+                            background-size: 650px;
+                            transition: 5s;
+                        }
+                        span{
+                            font-size: 15px;
+                            color: #fff;
+                            position: absolute;
+                            top: 80px;
+                            left: 30px;
+                        }
+                        h3{
+                            font-size: 27px;
+                            color: #fff;
+                            margin-top: 100px;
+                            margin-left: 30px;
+                        }
+                        button{
+                            font-size: 12px;
+                            color: #fff;
+                            width: 100px;
+                            height: 35px;
+                            background: rgb(10, 105, 10);
+                            border: none;
+                            margin-left: 30px;
+                            margin-top: 20px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+                .elements-content{
+                    display: none;
+                    position: absolute;
+                    background: #fff;
+                    top: 100px;
+                    z-index: 4000;
+                    width: 1393px;
+                    height: 330px;
+                    left: 0px;
+                    border-top: 1px solid rgb(211, 211, 211);
+                    h4{
+                        padding-top: 25px;
+                        font-size: 24px;
+                    }
+                    p{
+                        margin: 10px 0px;
+                        color: rgb(175, 174, 174);
+                        cursor: pointer;
+                    }
+                    .box{
+                        background: url(../img/vega-element-image-4.jpg)no-repeat;
+                        background-size: cover;
+                        height: 260px;
+                        width: 400px;
+                        text-align: center;
+                        &:hover{
+                            background-size: 500px;
+                        }
+                        span{
+                            font-size: 14px;
+                            color: #fff;
+                            display: inline-block;
+                            padding-top: 70px;
+                        }
+                        h3{
+                            font-size: 28px;
+                            color: #fff;
+                            margin: 15px 0px;
+                        }
+                        button{
+                            font-size: 13px;
+                            width: 100px;
+                            height: 35px;
+                            color: #fff;
+                            background: rgb(13, 102, 13);
+                            border: none;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+        .worldwide{
+            display: flex;
+            font-size: 14px;
+            p{
+                color: #242424;
+                margin-left: 10px;
+                span{
+                    color: #439665;
+                }
+            }
+        }
+        .support{
+            display: flex;
+            font-size: 14px;
+            p{
+                margin-left: 10px;
+                color: #242424;
+                span{
+                    color: #439665;
+                }
+            }
+        }
+    }
+    .main-imgs{
+        display: flex;
+        .left{
+            width: 730px;
+            height: 750px;
+            background: url(../img/vega-slider-bg-3-opt.jpg) no-repeat;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-left: 15px;
+            text-align: center;
+            cursor: pointer;
+            position: relative;
+            .subtitle{
+                font-size: 20px;
+                color: #fff;
+                padding-top: 450px;
+                margin-bottom: 30px;
+            }
+            .title{
+                font-size: 42px;
+                font-weight: 500;
+                color: #fff;
+            }
+            .text{
+                margin: 30px 0;
+                font-size: 16px;
+                color: #ffffff99;
+            }
+            .price{
+                margin-bottom: 20px;
+                font-size: 20px;
+                color: #fff;
+            }
+            button{
+                width: 106px;
+                height: 42px;
+                background: transparent;
+                font-size: 13px;
+                color: #fff;
+                font-weight: bold;
+                border: 1px solid #958C88;
+                &:hover{
+                    border-color: #fff;
+                    transition: 1s;
+                }
+            }
+            .prev{
+                font-size: 30px;
+                position: absolute;
+                left: 10px;
+                bottom: 440px;
+                color: #fff;
+            }
+            .next{
+                font-size: 30px;
+                position: absolute;
+                right: 10px;
+                bottom: 440px;
+                color: #fff;
+            }
+        }
+        .right{
+            .right-top{
+                display: flex;
+                .right-top-left{
+                    width: 275px;
+                    height: 335px;
+                    background: url(../img/vega-banner-bg-1.jpg) no-repeat;
+                    background-size: cover;
+                    margin: 0px 15px;
+                    &:hover{
+                        background-size: auto;
+                        transition: 2s;
+                    }
+                }
+                .right-top-right{
+                    width: 345px;
+                    height: 415px;
+                    background: url(../img/vega-banner-bg-2.jpg.webp) no-repeat;
+                    background-size: cover;
+                    margin-right: 15px;
+                    cursor: pointer;
+                    margin-left: 40px;
+                    &:hover{
+                        background-size: 600px;
+                        transition: 2s;
+                    }
+                    h3{
+                        font-size: 26px;
+                        color: #fff;
+                        padding-top: 200px;
+                        margin-bottom: 30px;
+                        margin-left: 20px;
+                    }
+                    p{
+                        font-size: 16px;
+                        color: #ffffff99;
+                        margin-bottom: 30px;
+                        margin-left: 20px;
+                    }
+                    button{
+                        width: 88px;
+                        height: 36px;
+                        background: transparent;
+                        color: #fff;
+                        font-size: 12px;
+                        border: 1px solid #958C88;
+                        margin-left: 20px;
+                        &:hover{
+                            border-color: #fff;
+                            transition: 1s;
+                        }
+                    }
+                }
+            }
+            .right-bot{
+                width: 680px;
+                height: 315px;
+                background: url(../img/vega-banner-bg-3.jpg.webp) no-repeat;
+                background-size: cover;
+                margin: 0px 15px;
+                margin-top: 20px;
+                h3{
+                    font-size: 34px;
+                    color: #fff;
+                    padding-top: 120px;
+                    margin-bottom: 30px;
+                    margin-left: 20px;
+                }
+                p{
+                    font-size: 16px;
+                    color: #ffffff99;
+                    margin-bottom: 30px;
+                    margin-left: 20px;
+                }
+                button{
+                    width: 88px;
+                    height: 36px;
+                    background: transparent;
+                    color: #fff;
+                    font-size: 12px;
+                    border: 1px solid #958C88;
+                    margin-left: 20px;
+                    &:hover{
+                        border-color: #fff;
+                        transition: 1s;
+                    }
+                }
+                &:hover{
+                    background-size: 700px;
+                    transition: 2s;
+                }
+            }
+        }
+    }
+    .main-services{
+        height: 82px;
+        margin: 0px 15px;
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .service{
+            display: flex;
+            &:hover{
+                div{
+                    border-color: green;
+                    transition: .7s;
+                }
+            }
+            p{
+                font-size: 20px;
+                color: #242424;
+                padding-top: 20px;
+                span{
+                    font-size: 16px;
+                    color: #686868;
+                }
+            }
+            div{
+                width: 82px;
+                height: 82px;
+                text-align: center;
+                border-radius: 50%;
+                border: 1px solid rgb(201, 198, 198);
+
+                svg{
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+    .main-products1{
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        .left{
+            width: 350px;
+            height: 500px;
+            background: url(../img/io-category-bg-1.jpg.webp)no-repeat;
+            background-size: cover;
+            margin-left: 15px;
+            &:hover{
+                background-size: 400px;
+                transition: background-size 1s;
+            }
+            h5{
+                font-size: 22px;
+                color: #fff;
+                padding-top: 40px;
+                margin-left: 20px;
+                position: relative;
+                span{
+                    position: absolute;
+                    font-size: 16px;
+                    color: #000;
+                    background: #fff;
+                    display: inline-block;
+                    width: 35px;
+                    height: 20px;
+                    border-radius: 15px;
+                    top: 30px;
+                    text-align: center;
+                }
+            }
+            li{
+                margin: 15px 0px;
+                a{
+                    text-decoration: none;
+                    font-size: 15px;
+                    color: rgb(153, 152, 152);
+                    &:hover{
+                        color: #fff;
+                        transition: .5s;
+                    }
+                }
+            }
+        }
+        .right{
+            width: 970px;
+            height: 530px;
+            margin-right: 15px;
+            .top{
+                margin-bottom: 50px;
+                h6{
+                    font-size: 18px;
+                    color: rgb(160, 158, 158);
+                }
+                .prod-links{
+                    margin-top: 20px;
+                    display: flex;
+                    justify-content: space-between;
+                    .lft{
+                        h4{
+                            font-size: 24px;
+                        }
+                    }
+                    .rght{
+                        display: flex;
+                        li{
+                            list-style: none;
+                            margin-left: 20px;
+                            a{
+                                text-decoration: none;
+                                color: rgb(160, 158, 158);
+                                &:hover{
+                                    color: #000;
+                                    text-decoration: underline;
+                                    transition: .5s;
+                                }
+                            }
+                            #active{
+                                text-decoration: underline;
+                                color: #000;
+                            }
+                        }
+                    }
+                }
+            }
+            .prods{
+                display: flex;
+                justify-content: space-between;
+                .prod1{
+                    cursor: pointer;
+                    background: #fff;
+                    width: 230px;
+                    .box{  
+                        width: 230px;
+                        height: 270px;
+                        background: url(../img/vega-product-1-901x1000.jpg.webp) no-repeat;
+                        background-size: cover;
+                        padding-top: 10px;
+                        .ic1{
+                            display: none;
+                            width: 25px;
+                            height: 25px;
+                            border-radius: 50%;
+                            background: #fff;
+                            text-align: center;
+                            margin: 10px 0px;
+                            margin-left: 200px;
+                            i{
+                                margin-top: 5px;
+                                color: #000;
+                            }
+                        }
+                        .ich{
+                            margin-top: 0px;
+                        }
+                    }
+                    h5{
+                        font-size: 20px;
+                        margin: 5px 0px;
+                        a{
+                            text-decoration: none;
+                            color: #000;
+                            &:hover{
+                                color: rgb(6, 150, 6);
+                                transition: .3s;
+                            }
+                        }
+                    }
+                    p{
+                        font-size: 13px;
+                        color: rgb(207, 205, 205);
+                        margin: 10px 0px;
+                    }
+                    .opts{
+                        display: flex;
+                        .colors{
+                            display: flex;
+                            margin-right: 45px;
+                            .c1{
+                                width: 15px;
+                                height: 15px;
+                                background: black;
+                                border-radius: 50%;
+                                margin-right: 5px;
+                            }
+                            .c2{
+                                width: 15px;
+                                height: 15px;
+                                background: gold;
+                                border-radius: 50%;
+                                margin-right: 5px;
+                            }
+                            .c3{
+                                width: 15px;
+                                height: 15px;
+                                background: green;
+                                border-radius: 50%;
+                                margin-right: 5px;
+                            }
+                            .c4{
+                                width: 15px;
+                                height: 15px;
+                                background: white;
+                                border-radius: 50%;
+                                border-radius: 1px solid rgb(87, 86, 86);
+                            }
+                        }
+                        .star{
+                            color: yellow;
+                        }
+                    }
+                    .prc{
+                        display: flex;
+                        margin-top: 20px;
+                        p{
+                            color: rgb(3, 87, 3);
+                            font-size: 18px;
+                        }
+                        div{
+                            width: 110px;
+                            background: #fff;
+                            height: 15px;
+                            text-align: center;
+                            font-size: 13px;
+                            color: #fff;
+                            padding: 10px 5px;
+                            padding-right: 30px;
+                            position: relative;
+                            border-radius: 20px;
+                            margin-left: 30px;
+                            span{
+                                border-radius: 50%;
+                                display: inline-block;
+                                width: 35px;
+                                height: 35px;
+                                background: #F1F1F2;
+                                position: absolute;
+                                top: 0px;
+                                right: 0px;
+                                margin-left: 10px;
+                                i{
+                                    color: #fff;
+                                    font-size: 12px;
+                                    margin-top: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .prod2{
+                    cursor: pointer;
+                    background: #fff;
+                    width: 230px;
+                    .box{  
+                        width: 230px;
+                        height: 270px;
+                        background: url(../img/vega-product-2-1.jpg.webp) no-repeat;
+                        background-size: cover;
+                        padding-top: 10px;
+                        .ic2{
+                            display: none;
+                            width: 25px;
+                            height: 25px;
+                            border-radius: 50%;
+                            background: #fff;
+                            text-align: center;
+                            margin: 10px 0px;
+                            margin-left: 200px;
+                            i{
+                                margin-top: 5px;
+                                color: #000;
+                            }
+                        }
+                        .ich{
+                            margin-top: 0px;
+                        }
+                    }
+                    h5{
+                        font-size: 20px;
+                        margin: 5px 0px;
+                        a{
+                            text-decoration: none;
+                            color: #000;
+                            &:hover{
+                                color: rgb(6, 150, 6);
+                                transition: .3s;
+                            }
+                        }
+                    }
+                    p{
+                        font-size: 13px;
+                        color: rgb(207, 205, 205);
+                        margin: 10px 0px;
+                    }
+                    .opts{
+                        display: flex;
+                        .colors{
+                            display: flex;
+                            margin-right: 45px;
+                            .c1{
+                                width: 15px;
+                                height: 15px;
+                                background: black;
+                                border-radius: 50%;
+                                margin-right: 5px;
+                            }
+                            .c2{
+                                width: 15px;
+                                height: 15px;
+                                background: blue;
+                                border-radius: 50%;
+                                margin-right: 5px;
+                            }
+                            .c3{
+                                width: 15px;
+                                height: 15px;
+                                background: red;
+                                border-radius: 50%;
+                                margin-right: 5px;
+                            }
+                        }
+                    }
+                    .prc{
+                        display: flex;
+                        margin-top: 20px;
+                        p{
+                            color: rgb(3, 87, 3);
+                            font-size: 18px;
+                        }
+                        div{
+                            width: 110px;
+                            background: #fff;
+                            height: 15px;
+                            text-align: center;
+                            font-size: 13px;
+                            color: #fff;
+                            padding: 10px 5px;
+                            padding-right: 30px;
+                            position: relative;
+                            border-radius: 20px;
+                            margin-left: 30px;
+                            span{
+                                border-radius: 50%;
+                                display: inline-block;
+                                width: 35px;
+                                height: 35px;
+                                background: #F1F1F2;
+                                position: absolute;
+                                top: 0px;
+                                right: 0px;
+                                margin-left: 10px;
+                                i{
+                                    color: #fff;
+                                    font-size: 12px;
+                                    margin-top: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .prod3{
+                    cursor: pointer;
+                    background: #fff;
+                    width: 230px;
+                    .box{  
+                        width: 230px;
+                        height: 270px;
+                        background: url(../img/vega-product-3.jpg.webp) no-repeat;
+                        background-size: cover;
+                        padding-top: 10px;
+                        .ic3{
+                            display: none;
+                            width: 25px;
+                            height: 25px;
+                            border-radius: 50%;
+                            background: #fff;
+                            text-align: center;
+                            margin: 10px 0px;
+                            margin-left: 200px;
+                            i{
+                                margin-top: 5px;
+                                color: #000;
+                            }
+                        }
+                        .ich{
+                            margin-top: 0px;
+                        }
+                    }
+                    h5{
+                        font-size: 20px;
+                        margin: 5px 0px;
+                        a{
+                            text-decoration: none;
+                            color: #000;
+                            &:hover{
+                                color: rgb(6, 150, 6);
+                                transition: .3s;
+                            }
+                        }
+                    }
+                    p{
+                        font-size: 13px;
+                        color: rgb(207, 205, 205);
+                        margin: 10px 0px;
+                    }
+                    .opts{
+                        display: flex;
+                        .colors{
+                            display: flex;
+                            margin-right: 75px;
+                            .c1{
+                                width: 15px;
+                                height: 15px;
+                                background: gold;
+                                border-radius: 50%;
+                                margin-right: 5px;
+                            }
+                            .c2{
+                                width: 15px;
+                                height: 15px;
+                                background: gray;
+                                border-radius: 50%;
+                                margin-right: 5px;
+                            }
+                        }
+                        .star{
+                            color: yellow;
+                        }
+                    }
+                    .prc{
+                        display: flex;
+                        margin-top: 20px;
+                        p{
+                            color: rgb(3, 87, 3);
+                            font-size: 18px;
+                        }
+                        div{
+                            width: 110px;
+                            background: #fff;
+                            height: 15px;
+                            text-align: center;
+                            font-size: 13px;
+                            color: #fff;
+                            padding: 10px 5px;
+                            padding-right: 30px;
+                            position: relative;
+                            border-radius: 20px;
+                            margin-left: 30px;
+                            span{
+                                border-radius: 50%;
+                                display: inline-block;
+                                width: 35px;
+                                height: 35px;
+                                background: #F1F1F2;
+                                position: absolute;
+                                top: 0px;
+                                right: 0px;
+                                margin-left: 10px;
+                                i{
+                                    color: #fff;
+                                    font-size: 12px;
+                                    margin-top: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .prod4{
+                    cursor: pointer;
+                    background: #fff;
+                    width: 230px;
+                    .box{  
+                        width: 230px;
+                        height: 270px;
+                        background: url(../img/vega-product-13-1.jpg.webp) no-repeat;
+                        background-size: cover;
+                        padding-top: 10px;
+                        .ic4{
+                            display: none;
+                            width: 25px;
+                            height: 25px;
+                            border-radius: 50%;
+                            background: #fff;
+                            text-align: center;
+                            margin: 10px 0px;
+                            margin-left: 200px;
+                            i{
+                                margin-top: 5px;
+                                color: #000;
+                            }
+                        }
+                        .ich{
+                            margin-top: 0px;
+                        }
+                    }
+                    h5{
+                        font-size: 20px;
+                        margin: 5px 0px;
+                        a{
+                            text-decoration: none;
+                            color: #000;
+                            &:hover{
+                                color: rgb(6, 150, 6);
+                                transition: .3s;
+                            }
+                        }
+                    }
+                    p{
+                        font-size: 13px;
+                        color: rgb(207, 205, 205);
+                        margin: 10px 0px;
+                    }
+                    .opts{
+                        display: flex;
+                        .colors{
+                            display: flex;
+                            margin-right: 45px;
+                            .c1{
+                                width: 15px;
+                                height: 15px;
+                                background: black;
+                                border-radius: 50%;
+                                margin-right: 5px;
+                            }
+                            .c2{
+                                width: 15px;
+                                height: 15px;
+                                background: blue;
+                                border-radius: 50%;
+                                margin-right: 5px;
+                            }
+                            .c3{
+                                width: 15px;
+                                height: 15px;
+                                background: red;
+                                border-radius: 50%;
+                                margin-right: 5px;
+                            }
+                            .c4{
+                                width: 15px;
+                                height: 15px;
+                                background: yellow;
+                                border-radius: 50%;
+                                border-radius: 1px solid rgb(87, 86, 86);
+                            }
+                        }
+                    }
+                    .prc{
+                        display: flex;
+                        margin-top: 20px;
+                        p{
+                            color: rgb(3, 87, 3);
+                            font-size: 18px;
+                        }
+                        div{
+                            width: 110px;
+                            background: #fff;
+                            height: 15px;
+                            text-align: center;
+                            font-size: 13px;
+                            color: #fff;
+                            padding: 10px 5px;
+                            padding-right: 30px;
+                            position: relative;
+                            border-radius: 20px;
+                            margin-left: 30px;
+                            span{
+                                border-radius: 50%;
+                                display: inline-block;
+                                width: 35px;
+                                height: 35px;
+                                background: #F1F1F2;
+                                position: absolute;
+                                top: 0px;
+                                right: 0px;
+                                margin-left: 10px;
+                                i{
+                                    color: #fff;
+                                    font-size: 12px;
+                                    margin-top: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .main-products2{
+        display: flex;
+        justify-content: space-between;
+        .left{
+            width: 350px;
+            height: 500px;
+            background: url(../img/io-category-bg-2.jpg.webp)no-repeat;
+            background-size: cover;
+            margin-left: 15px;
+            &:hover{
+                background-size: 400px;
+                transition: background-size 1s;
+            }
+            h5{
+                font-size: 22px;
+                color: #fff;
+                padding-top: 40px;
+                margin-left: 20px;
+                position: relative;
+                span{
+                    position: absolute;
+                    font-size: 16px;
+                    color: #000;
+                    background: #fff;
+                    display: inline-block;
+                    width: 35px;
+                    height: 20px;
+                    border-radius: 15px;
+                    top: 30px;
+                    text-align: center;
+                }
+            }
+            li{
+                margin: 15px 0px;
+                list-style: none;
+                margin-left: 20px;
+                a{
+                    text-decoration: none;
+                    font-size: 15px;
+                    color: rgb(153, 152, 152);
+                    &:hover{
+                        color: #fff;
+                        transition: .5s;
+                    }
+                }
+            }
+        }
+        .right{
+            width: 970px;
+            height: 530px;
+            margin-right: 15px;
+            .prods{
+                display: flex;
+                justify-content: space-between;
+                margin-top: 80px;
+                .prod5{
+                    cursor: pointer;
+                    background: #fff;
+                    width: 230px;
+                    .box{  
+                        width: 230px;
+                        height: 270px;
+                        background: url(../img/vega-product-4.jpg.webp) no-repeat;
+                        background-size: cover;
+                        padding-top: 10px;
+                        .ic5{
+                            display: none;
+                            width: 25px;
+                            height: 25px;
+                            border-radius: 50%;
+                            background: #fff;
+                            text-align: center;
+                            margin: 10px 0px;
+                            margin-left: 200px;
+                            i{
+                                margin-top: 5px;
+                                color: #000;
+                            }
+                        }
+                        .ich{
+                            margin-top: 0px;
+                        }
+                    }
+                    h5{
+                        font-size: 20px;
+                        margin: 5px 0px;
+                        a{
+                            text-decoration: none;
+                            color: #000;
+                            &:hover{
+                                color: rgb(6, 150, 6);
+                                transition: .3s;
+                            }
+                        }
+                    }
+                    p{
+                        font-size: 13px;
+                        color: rgb(207, 205, 205);
+                        margin: 10px 0px;
+                    }
+                    .opts{
+                        display: flex;
+                        .colors{
+                            display: flex;
+                            margin-right: 45px;
+                            .c1{
+                                width: 15px;
+                                height: 15px;
+                                background: beige;
+                                border-radius: 50%;
+                                margin-right: 5px;
+                            }
+                            .c2{
+                                width: 15px;
+                                height: 15px;
+                                background: black;
+                                border-radius: 50%;
+                                margin-right: 5px;
+                            }
+                            .c3{
+                                width: 15px;
+                                height: 15px;
+                                background: green;
+                                border-radius: 50%;
+                                margin-right: 5px;
+                            }
+                        }
+                        .star{
+                            color: yellow;
+                        }
+                    }
+                    .prc{
+                        display: flex;
+                        margin-top: 20px;
+                        p{
+                            color: rgb(3, 87, 3);
+                            font-size: 18px;
+                        }
+                        div{
+                            width: 110px;
+                            background: #fff;
+                            height: 15px;
+                            text-align: center;
+                            font-size: 13px;
+                            color: #fff;
+                            padding: 10px 5px;
+                            padding-right: 30px;
+                            position: relative;
+                            border-radius: 20px;
+                            margin-left: 30px;
+                            span{
+                                border-radius: 50%;
+                                display: inline-block;
+                                width: 35px;
+                                height: 35px;
+                                background: #F1F1F2;
+                                position: absolute;
+                                top: 0px;
+                                right: 0px;
+                                margin-left: 10px;
+                                i{
+                                    color: #fff;
+                                    font-size: 12px;
+                                    margin-top: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .prod6{
+                    cursor: pointer;
+                    background: #fff;
+                    width: 230px;
+                    .box{  
+                        width: 230px;
+                        height: 270px;
+                        background: url(../img/vega-product-5.jpg.webp) no-repeat;
+                        background-size: cover;
+                        padding-top: 10px;
+                        .ic6{
+                            display: none;
+                            width: 25px;
+                            height: 25px;
+                            border-radius: 50%;
+                            background: #fff;
+                            text-align: center;
+                            margin: 10px 0px;
+                            margin-left: 200px;
+                            i{
+                                margin-top: 5px;
+                                color: #000;
+                            }
+                        }
+                        .ich{
+                            margin-top: 0px;
+                        }
+                    }
+                    h5{
+                        font-size: 20px;
+                        margin: 5px 0px;
+                        a{
+                            text-decoration: none;
+                            color: #000;
+                            &:hover{
+                                color: rgb(6, 150, 6);
+                                transition: .3s;
+                            }
+                        }
+                    }
+                    p{
+                        font-size: 13px;
+                        color: rgb(207, 205, 205);
+                        margin: 10px 0px;
+                    }
+                    .opts{
+                        display: flex;
+                        .colors{
+                            display: flex;
+                            margin-right: 105px;
+                            .c1{
+                                width: 15px;
+                                height: 15px;
+                                background: beige;
+                                border-radius: 50%;
+                                margin-right: 5px;
+                            }
+                            .c2{
+                                width: 15px;
+                                height: 15px;
+                                background: black;
+                                border-radius: 50%;
+                                margin-right: 5px;
+                            }
+                            .c3{
+                                width: 15px;
+                                height: 15px;
+                                background: green;
+                                border-radius: 50%;
+                                margin-right: 5px;
+                            }
+                        }
+                        .star{
+                            color: yellow;
+                        }
+                    }
+                    .prc{
+                        display: flex;
+                        margin-top: 20px;
+                        p{
+                            color: rgb(3, 87, 3);
+                            font-size: 18px;
+                        }
+                        div{
+                            width: 110px;
+                            background: #fff;
+                            height: 15px;
+                            text-align: center;
+                            font-size: 13px;
+                            color: #fff;
+                            padding: 10px 5px;
+                            padding-right: 30px;
+                            position: relative;
+                            border-radius: 20px;
+                            margin-left: 30px;
+                            span{
+                                border-radius: 50%;
+                                display: inline-block;
+                                width: 35px;
+                                height: 35px;
+                                background: #F1F1F2;
+                                position: absolute;
+                                top: 0px;
+                                right: 0px;
+                                margin-left: 10px;
+                                i{
+                                    color: #fff;
+                                    font-size: 12px;
+                                    margin-top: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .prod7{
+                    cursor: pointer;
+                    background: #fff;
+                    width: 230px;
+                    .box{  
+                        width: 230px;
+                        height: 270px;
+                        background: url(../img/vega-product-6.jpg.webp) no-repeat;
+                        background-size: cover;
+                        padding-top: 10px;
+                        .ic7{
+                            display: none;
+                            width: 25px;
+                            height: 25px;
+                            border-radius: 50%;
+                            background: #fff;
+                            text-align: center;
+                            margin: 10px 0px;
+                            margin-left: 200px;
+                            i{
+                                margin-top: 5px;
+                                color: #000;
+                            }
+                        }
+                        .ich{
+                            margin-top: 0px;
+                        }
+                    }
+                    h5{
+                        font-size: 20px;
+                        margin: 5px 0px;
+                        a{
+                            text-decoration: none;
+                            color: #000;
+                            &:hover{
+                                color: rgb(6, 150, 6);
+                                transition: .3s;
+                            }
+                        }
+                    }
+                    p{
+                        font-size: 13px;
+                        color: rgb(207, 205, 205);
+                        margin: 10px 0px;
+                    }
+                    .opts{
+                        display: flex;
+                        .colors{
+                            display: flex;
+                            margin-right: 45px;
+                            .c1{
+                                width: 15px;
+                                height: 15px;
+                                background: black;
+                                border-radius: 50%;
+                                margin-right: 5px;
+                            }
+                            .c2{
+                                width: 15px;
+                                height: 15px;
+                                background: gold;
+                                border-radius: 50%;
+                                margin-right: 5px;
+                            }
+                            .c3{
+                                width: 15px;
+                                height: 15px;
+                                background: green;
+                                border-radius: 50%;
+                                margin-right: 5px;
+                            }
+                            .c4{
+                                width: 15px;
+                                height: 15px;
+                                background: white;
+                                border-radius: 50%;
+                                border-radius: 1px solid rgb(87, 86, 86);
+                            }
+                        }
+                        .star{
+                            color: yellow;
+                        }
+                    }
+                    .prc{
+                        display: flex;
+                        margin-top: 20px;
+                        p{
+                            color: rgb(3, 87, 3);
+                            font-size: 18px;
+                        }
+                        div{
+                            width: 110px;
+                            background: #fff;
+                            height: 15px;
+                            text-align: center;
+                            font-size: 13px;
+                            color: #fff;
+                            padding: 10px 5px;
+                            padding-right: 30px;
+                            position: relative;
+                            border-radius: 20px;
+                            margin-left: 30px;
+                            span{
+                                border-radius: 50%;
+                                display: inline-block;
+                                width: 35px;
+                                height: 35px;
+                                background: #F1F1F2;
+                                position: absolute;
+                                top: 0px;
+                                right: 0px;
+                                margin-left: 10px;
+                                i{
+                                    color: #fff;
+                                    font-size: 12px;
+                                    margin-top: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .prod8{
+                    cursor: pointer;
+                    background: #fff;
+                    width: 230px;
+                    .box{  
+                        width: 230px;
+                        height: 270px;
+                        background: url(../img/vega-product-14.jpg.webp) no-repeat;
+                        background-size: cover;
+                        padding-top: 10px;
+                        .ic8{
+                            display: none;
+                            width: 25px;
+                            height: 25px;
+                            border-radius: 50%;
+                            background: #fff;
+                            text-align: center;
+                            margin: 10px 0px;
+                            margin-left: 200px;
+                            i{
+                                margin-top: 5px;
+                                color: #000;
+                            }
+                        }
+                        .ich{
+                            margin-top: 0px;
+                        }
+                    }
+                    h5{
+                        font-size: 20px;
+                        margin: 5px 0px;
+                        a{
+                            text-decoration: none;
+                            color: #000;
+                            &:hover{
+                                color: rgb(6, 150, 6);
+                                transition: .3s;
+                            }
+                        }
+                    }
+                    p{
+                        font-size: 13px;
+                        color: rgb(207, 205, 205);
+                        margin: 10px 0px;
+                    }
+                    .opts{
+                        display: flex;
+                        .colors{
+                            display: flex;
+                            margin-right: 45px;
+                            .c1{
+                                width: 15px;
+                                height: 15px;
+                                background: black;
+                                border-radius: 50%;
+                                margin-right: 5px;
+                            }
+                            .c2{
+                                width: 15px;
+                                height: 15px;
+                                background: gold;
+                                border-radius: 50%;
+                                margin-right: 5px;
+                            }
+                            .c3{
+                                width: 15px;
+                                height: 15px;
+                                background: green;
+                                border-radius: 50%;
+                                margin-right: 5px;
+                            }
+                            .c4{
+                                width: 15px;
+                                height: 15px;
+                                background: white;
+                                border-radius: 50%;
+                                border-radius: 1px solid rgb(87, 86, 86);
+                            }
+                        }
+                        .star{
+                            color: yellow;
+                        }
+                    }
+                    .prc{
+                        display: flex;
+                        margin-top: 20px;
+                        p{
+                            color: rgb(3, 87, 3);
+                            font-size: 18px;
+                        }
+                        div{
+                            width: 110px;
+                            background: #fff;
+                            height: 15px;
+                            text-align: center;
+                            font-size: 13px;
+                            color: #fff;
+                            padding: 10px 5px;
+                            padding-right: 30px;
+                            position: relative;
+                            border-radius: 20px;
+                            margin-left: 30px;
+                            span{
+                                border-radius: 50%;
+                                display: inline-block;
+                                width: 35px;
+                                height: 35px;
+                                background: #F1F1F2;
+                                position: absolute;
+                                top: 0px;
+                                right: 0px;
+                                margin-left: 10px;
+                                i{
+                                    color: #fff;
+                                    font-size: 12px;
+                                    margin-top: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

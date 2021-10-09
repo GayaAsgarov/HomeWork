@@ -1,0 +1,85 @@
+.main-forms{
+    width: 1350px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 20px;
+    margin-left: -5px;
+    margin-top: 50px;
+    .left{
+        width: 660px;
+        height: 350px;
+        background: url(../img/vega-bordered-1-opt.jpeg) no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .left-in{
+            width: 640px;
+            height: 310px;
+            background: #fff;
+            text-align: center;
+            h3{
+                padding-top: 80px;
+                font-size: 26px;
+                color: #242424;
+            }
+            p{
+                font-size: 16px;
+                color: #686868;
+                margin: 20px 0px;
+            }
+            input{
+                width: 200px;
+                height: 35px;
+                border-radius: none;
+                border: 1px solid #e4e4e4;
+                padding-left: 20px;
+                outline: none;
+            }
+            button{
+                width: 100px;
+                height: 37px;
+                background: #439665;
+                color: #fff;
+                border: none;
+                cursor: pointer;
+                margin-left: 30px;
+                &:hover{
+                    background: #538A62;
+                    transition: .3s;
+                }
+            }
+        }
+
+    }
+    .right{
+        width: 660px;
+        height: 350px;
+        background: url(../img/vega-blog-4-min-1200x776.jpg) no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .right-in{
+            width: 640px;
+            height: 310px;
+            background: #fff;
+            text-align: center;
+            h3{
+                padding-top: 80px;
+                font-size: 26px;
+                color: #242424;
+            }
+            p{
+                font-size: 16px;
+                color: #686868;
+                margin: 20px 0px;
+            }
+            .images{
+                img{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

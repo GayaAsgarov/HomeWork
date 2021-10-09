@@ -1,0 +1,23 @@
+.section2{
+    background-color: #fedf0c;
+    width: 250px;
+    height: 30px;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 16px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    margin: 0px auto;
+    margin-top: 50px;
+    cursor: pointer;
+    a{
+        text-decoration: none;
+    }
+    &:hover{
+        background-color: #07285a;
+        transition: .5s;
+        a{
+            color: #fff;
+        }
+    }
+}

@@ -1,0 +1,53 @@
+.sidebar{
+    width: 45px;
+    height: 788px;
+    overflow: hidden;
+    position: fixed;
+    border-right: 1px solid rgb(226, 224, 224);
+    z-index:20000000000000;
+    background: #fff;
+    div{
+        width: 244px;
+        height: 52px;
+        margin-top: 3px;
+        margin: 0px auto;
+        margin-top: 3px;
+        margin-left: 10px;
+        border-bottom: 1px solid rgb(226, 224, 224);
+        a{
+            position: relative;
+            top: 13px;
+            text-decoration: none;
+            font-size: 14px;
+            color: #333;
+            &:hover{
+                color: rgb(116, 114, 114);
+            }
+            img{
+                width: 25px;
+                height: 25px;
+            }
+            span{
+                display: inline-block;
+                position: relative;
+                left: 23px;
+                bottom: 5px;
+            }
+            i{
+                font-size: 20px;
+            }
+        }
+    }
+    .bars{
+        background: #439665;
+        width: 244px;
+        margin: 0;
+        padding-left: 15px;
+        a{
+            color: #fff;
+            &:hover{
+                color: #fff;
+            }
+        }
+    }
+}

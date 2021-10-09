@@ -1,0 +1,54 @@
+.main-2prod{
+    margin: 0px 20px;
+    margin-top: 50px;
+    width: 1350px;
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+    .prd2{
+        color: #fff;
+        width: 660px;
+        height: 200px;
+        padding-top: 250px;
+        h6{
+            font-size: 16px;
+            margin-left: 20px;
+            font-weight:lighter;
+        }
+        h4{
+            font-size: 26px;
+            margin: 20px 0px;
+            margin-left: 20px;
+        }
+        button{
+            width: 70px;
+            height: 35px;
+            border: none;
+            border-radius: 0px;
+            font-size: 12px;
+            color: #000;
+            margin-left: 20px;
+            cursor: pointer;
+            &:hover{
+                background: #E9E8E9;
+                transition: .3s;
+            }
+        }
+    }
+    .left{
+        background: url(../img/vega-banner-bg-4.jpg.webp) no-repeat;
+        background-size: cover;
+        cursor: pointer;
+        &:hover{
+            background-size: 700px;
+        }
+    }
+    .right{
+        background: url(../img/vega-banner-bg-5-opt.jpg.webp) no-repeat;
+        background-size: cover;
+        cursor: pointer;
+        &:hover{
+            background-size: 700px;
+        }
+    }
+}

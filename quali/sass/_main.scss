@@ -1,0 +1,85 @@
+.main{
+    width: 1130px;
+    //height: 850px;
+    //background-color: chartreuse;
+    position: absolute;
+    left: 310px;
+    .top{
+        .tel{
+            margin-left: 10px;
+            margin-top: 20px;
+            a{
+                font-size: 16px;
+                color: #07285a;
+                text-decoration: none;
+                &:hover{
+                    color: #234FC7;
+                }
+            }
+        }
+        .maincont{
+            margin-top: 100px;
+            h1{
+                font-size: 109px;
+                font-weight: bold;
+                color: #07285a;
+            }
+            #h1p{
+                display: flex;
+                margin-left: 120px;
+                p{
+                    font-size: 14px;margin-top: 20px;
+                    margin-left: 50px;
+                    color: #006df9;
+                    font-weight: normal;
+                }
+                span{
+                    color: #006df9;
+                }
+            }
+            #h11{
+                margin-left: 330px;
+            }
+            #h13{
+                margin-left: 330px;
+                color: #006df9;
+            }
+            #h14{
+                margin-left: 120px;
+            }
+        }
+        .links{
+            margin-top: 50px;
+            display: flex;
+            #link1{
+                margin-left: 120px;
+                font-size: 13.2px;
+                color: #006df9;
+                text-decoration: none;
+            }
+            #link2{
+                margin: 0px 200px;
+                font-size: 13.2px;
+                color: #006df9;
+                text-decoration: none;
+                display: inline-block;
+                width: 40px;
+                height: 30px;
+                text-align: center;
+                padding-top: 15px;
+                margin-top: -10px;
+                border-radius: 50%;
+                &:hover{
+                    background-color: #234FC7;
+                    transition: .5s;
+                    color: #fff;
+                }
+            }
+            #link3{
+                font-size: 13.2px;
+                color: #006df9;
+                text-decoration: none;
+            }
+        }
+    }
+}

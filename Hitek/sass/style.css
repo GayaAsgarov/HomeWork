@@ -1,0 +1,3566 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.sidebar {
+  width: 45px;
+  height: 788px;
+  overflow: hidden;
+  position: fixed;
+  border-right: 1px solid #e2e0e0;
+  z-index: 20000000000000;
+  background: #fff;
+}
+
+.sidebar div {
+  width: 244px;
+  height: 52px;
+  margin-top: 3px;
+  margin: 0px auto;
+  margin-top: 3px;
+  margin-left: 10px;
+  border-bottom: 1px solid #e2e0e0;
+}
+
+.sidebar div a {
+  position: relative;
+  top: 13px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #333;
+}
+
+.sidebar div a:hover {
+  color: #747272;
+}
+
+.sidebar div a img {
+  width: 25px;
+  height: 25px;
+}
+
+.sidebar div a span {
+  display: inline-block;
+  position: relative;
+  left: 23px;
+  bottom: 5px;
+}
+
+.sidebar div a i {
+  font-size: 20px;
+}
+
+.sidebar .bars {
+  background: #439665;
+  width: 244px;
+  margin: 0;
+  padding-left: 15px;
+}
+
+.sidebar .bars a {
+  color: #fff;
+}
+
+.sidebar .bars a:hover {
+  color: #fff;
+}
+
+.main {
+  position: absolute;
+  left: 47px;
+  width: 1393px;
+}
+
+.main .main-top {
+  height: 41px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+.main .main-top .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 13px;
+  color: #686868;
+}
+
+.main .main-top .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  color: #333333;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.main .main-top .right .user:hover {
+  color: #adacac;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.main .main-top .right .compare:hover {
+  color: #adacac;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.main .main-top .right .like:hover {
+  color: #adacac;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.main .main-top .right .lock:hover {
+  color: #adacac;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.main .main-top .sep {
+  width: 2px;
+  height: 15px;
+  background: #eaeaea;
+  margin: 0px 5px;
+}
+
+.main .main-navigation {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 3000000;
+}
+
+.main .main-navigation .logo {
+  width: 130px;
+  height: 40.69px;
+  margin-bottom: 20px;
+}
+
+.main .main-navigation .search {
+  width: 400px;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid lightgray;
+  font-size: 13px;
+  position: relative;
+  left: 35px;
+}
+
+.main .main-navigation .search input {
+  border: none;
+  outline: none;
+  background: transparent;
+  position: absolute;
+  left: 40px;
+}
+
+.main .main-navigation .search i {
+  font-size: 20px;
+  position: absolute;
+  left: 10px;
+}
+
+.main .main-navigation .search select {
+  position: absolute;
+  left: 260px;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.main .main-navigation .search .sep {
+  width: 2px;
+  height: 15px;
+  background: #eaeaea;
+  position: absolute;
+  left: 220px;
+}
+
+.main .main-navigation .navlinks {
+  width: 400px;
+}
+
+.main .main-navigation .navlinks ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .main-navigation .navlinks ul li a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #333333;
+}
+
+.main .main-navigation .navlinks ul .home-content {
+  display: none;
+  position: absolute;
+  background: #fff;
+  top: 100px;
+  z-index: 4000;
+  width: 1393px;
+  height: 400px;
+  left: 0px;
+  border-top: 1px solid lightgray;
+}
+
+.main .main-navigation .navlinks ul .home-content img {
+  width: 300px;
+  height: 200px;
+  cursor: pointer;
+}
+
+.main .main-navigation .navlinks ul .home-content p {
+  font-size: 16px;
+  color: grey;
+  margin-bottom: 10px;
+}
+
+.main .main-navigation .navlinks ul .home-content h5 {
+  font-size: 20px;
+}
+
+.main .main-navigation .navlinks ul .shop-content {
+  display: none;
+  position: absolute;
+  background: #fff;
+  top: 100px;
+  z-index: 4000;
+  width: 1393px;
+  height: 500px;
+  left: 0px;
+  border-top: 1px solid lightgray;
+}
+
+.main .main-navigation .navlinks ul .shop-content .prod {
+  cursor: pointer;
+}
+
+.main .main-navigation .navlinks ul .shop-content .prod img {
+  width: 200px;
+  height: 100px;
+  margin-bottom: 15px;
+}
+
+.main .main-navigation .navlinks ul .shop-content .prod h4 {
+  font-size: 24px;
+  padding-top: 25px;
+  margin-bottom: 15px;
+}
+
+.main .main-navigation .navlinks ul .shop-content .prod p {
+  font-size: 16px;
+  margin: 15px 0px;
+}
+
+.main .main-navigation .navlinks ul .shop-content .seperate {
+  width: 2px;
+  height: 350px;
+  background: #dddddd;
+}
+
+.main .main-navigation .navlinks ul .shop-content .featured {
+  cursor: pointer;
+}
+
+.main .main-navigation .navlinks ul .shop-content .featured h4 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.main .main-navigation .navlinks ul .shop-content .featured .products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .main-navigation .navlinks ul .shop-content .featured .products i {
+  color: #ecec6b;
+}
+
+.main .main-navigation .navlinks ul .shop-content .featured .products h6 {
+  font-size: 16px;
+}
+
+.main .main-navigation .navlinks ul .shop-content .featured .products p {
+  font-size: 13px;
+  color: #0c950c;
+}
+
+.main .main-navigation .navlinks ul .shop-content .featured .products p span {
+  font-size: 11px;
+  text-decoration: line-through;
+  color: #aaa7a7;
+}
+
+.main .main-navigation .navlinks ul .shop-content .featured .products .tablet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.main .main-navigation .navlinks ul .shop-content .featured .products .album {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.main .main-navigation .navlinks ul .shop-content .featured .products .ms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.main .main-navigation .navlinks ul .shop-content .featured .products .smartphone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.main .main-navigation .navlinks ul .shop-content .featured .products .gaming {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.main .main-navigation .navlinks ul .shop-content .featured .products .pro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.main .main-navigation .navlinks ul .blog-content {
+  display: none;
+  position: absolute;
+  background: #fff;
+  top: 100px;
+  z-index: 4000;
+  width: 1393px;
+  height: 330px;
+  left: 0px;
+  border-top: 1px solid lightgray;
+}
+
+.main .main-navigation .navlinks ul .blog-content h4 {
+  font-size: 24px;
+  padding-top: 20px;
+  margin-bottom: 15px;
+}
+
+.main .main-navigation .navlinks ul .blog-content p {
+  font-size: 16px;
+  color: #c5c2c2;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.main .main-navigation .navlinks ul .blog-content .security {
+  height: 250px;
+  width: 300px;
+  background: url(../img/vega-banner-1.jpg) no-repeat;
+  background-size: 270px;
+}
+
+.main .main-navigation .navlinks ul .blog-content .security p {
+  padding-top: 20px;
+  font-size: 16px;
+  cursor: text;
+}
+
+.main .main-navigation .navlinks ul .blog-content .security h3 {
+  font-size: 30px;
+  margin: 20px 0px;
+}
+
+.main .main-navigation .navlinks ul .blog-content .security a {
+  color: black;
+}
+
+.main .main-navigation .navlinks ul .blog-content .security a:hover {
+  color: #6b6b6b;
+}
+
+.main .main-navigation .navlinks ul .blog-content .notebook {
+  height: 250px;
+  width: 600px;
+  background: url(../img/vega-blog-9.jpg) no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.main .main-navigation .navlinks ul .blog-content .notebook:hover {
+  background-size: 650px;
+  -webkit-transition: 5s;
+  transition: 5s;
+}
+
+.main .main-navigation .navlinks ul .blog-content .notebook span {
+  font-size: 15px;
+  color: #fff;
+  position: absolute;
+  top: 80px;
+  left: 30px;
+}
+
+.main .main-navigation .navlinks ul .blog-content .notebook h3 {
+  font-size: 27px;
+  color: #fff;
+  margin-top: 100px;
+  margin-left: 30px;
+}
+
+.main .main-navigation .navlinks ul .blog-content .notebook button {
+  font-size: 12px;
+  color: #fff;
+  width: 100px;
+  height: 35px;
+  background: #0a690a;
+  border: none;
+  margin-left: 30px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.main .main-navigation .navlinks ul .elements-content {
+  display: none;
+  position: absolute;
+  background: #fff;
+  top: 100px;
+  z-index: 4000;
+  width: 1393px;
+  height: 330px;
+  left: 0px;
+  border-top: 1px solid lightgray;
+}
+
+.main .main-navigation .navlinks ul .elements-content h4 {
+  padding-top: 25px;
+  font-size: 24px;
+}
+
+.main .main-navigation .navlinks ul .elements-content p {
+  margin: 10px 0px;
+  color: #afaeae;
+  cursor: pointer;
+}
+
+.main .main-navigation .navlinks ul .elements-content .box {
+  background: url(../img/vega-element-image-4.jpg) no-repeat;
+  background-size: cover;
+  height: 260px;
+  width: 400px;
+  text-align: center;
+}
+
+.main .main-navigation .navlinks ul .elements-content .box:hover {
+  background-size: 500px;
+}
+
+.main .main-navigation .navlinks ul .elements-content .box span {
+  font-size: 14px;
+  color: #fff;
+  display: inline-block;
+  padding-top: 70px;
+}
+
+.main .main-navigation .navlinks ul .elements-content .box h3 {
+  font-size: 28px;
+  color: #fff;
+  margin: 15px 0px;
+}
+
+.main .main-navigation .navlinks ul .elements-content .box button {
+  font-size: 13px;
+  width: 100px;
+  height: 35px;
+  color: #fff;
+  background: #0d660d;
+  border: none;
+  cursor: pointer;
+}
+
+.main .main-navigation .worldwide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+}
+
+.main .main-navigation .worldwide p {
+  color: #242424;
+  margin-left: 10px;
+}
+
+.main .main-navigation .worldwide p span {
+  color: #439665;
+}
+
+.main .main-navigation .support {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+}
+
+.main .main-navigation .support p {
+  margin-left: 10px;
+  color: #242424;
+}
+
+.main .main-navigation .support p span {
+  color: #439665;
+}
+
+.main .main-imgs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .main-imgs .left {
+  width: 730px;
+  height: 750px;
+  background: url(../img/vega-slider-bg-3-opt.jpg) no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 15px;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.main .main-imgs .left .subtitle {
+  font-size: 20px;
+  color: #fff;
+  padding-top: 450px;
+  margin-bottom: 30px;
+}
+
+.main .main-imgs .left .title {
+  font-size: 42px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.main .main-imgs .left .text {
+  margin: 30px 0;
+  font-size: 16px;
+  color: #ffffff99;
+}
+
+.main .main-imgs .left .price {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.main .main-imgs .left button {
+  width: 106px;
+  height: 42px;
+  background: transparent;
+  font-size: 13px;
+  color: #fff;
+  font-weight: bold;
+  border: 1px solid #958C88;
+}
+
+.main .main-imgs .left button:hover {
+  border-color: #fff;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.main .main-imgs .left .prev {
+  font-size: 30px;
+  position: absolute;
+  left: 10px;
+  bottom: 440px;
+  color: #fff;
+}
+
+.main .main-imgs .left .next {
+  font-size: 30px;
+  position: absolute;
+  right: 10px;
+  bottom: 440px;
+  color: #fff;
+}
+
+.main .main-imgs .right .right-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .main-imgs .right .right-top .right-top-left {
+  width: 275px;
+  height: 335px;
+  background: url(../img/vega-banner-bg-1.jpg) no-repeat;
+  background-size: cover;
+  margin: 0px 15px;
+}
+
+.main .main-imgs .right .right-top .right-top-left:hover {
+  background-size: auto;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.main .main-imgs .right .right-top .right-top-right {
+  width: 345px;
+  height: 415px;
+  background: url(../img/vega-banner-bg-2.jpg.webp) no-repeat;
+  background-size: cover;
+  margin-right: 15px;
+  cursor: pointer;
+  margin-left: 40px;
+}
+
+.main .main-imgs .right .right-top .right-top-right:hover {
+  background-size: 600px;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.main .main-imgs .right .right-top .right-top-right h3 {
+  font-size: 26px;
+  color: #fff;
+  padding-top: 200px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+}
+
+.main .main-imgs .right .right-top .right-top-right p {
+  font-size: 16px;
+  color: #ffffff99;
+  margin-bottom: 30px;
+  margin-left: 20px;
+}
+
+.main .main-imgs .right .right-top .right-top-right button {
+  width: 88px;
+  height: 36px;
+  background: transparent;
+  color: #fff;
+  font-size: 12px;
+  border: 1px solid #958C88;
+  margin-left: 20px;
+}
+
+.main .main-imgs .right .right-top .right-top-right button:hover {
+  border-color: #fff;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.main .main-imgs .right .right-bot {
+  width: 680px;
+  height: 315px;
+  background: url(../img/vega-banner-bg-3.jpg.webp) no-repeat;
+  background-size: cover;
+  margin: 0px 15px;
+  margin-top: 20px;
+}
+
+.main .main-imgs .right .right-bot h3 {
+  font-size: 34px;
+  color: #fff;
+  padding-top: 120px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+}
+
+.main .main-imgs .right .right-bot p {
+  font-size: 16px;
+  color: #ffffff99;
+  margin-bottom: 30px;
+  margin-left: 20px;
+}
+
+.main .main-imgs .right .right-bot button {
+  width: 88px;
+  height: 36px;
+  background: transparent;
+  color: #fff;
+  font-size: 12px;
+  border: 1px solid #958C88;
+  margin-left: 20px;
+}
+
+.main .main-imgs .right .right-bot button:hover {
+  border-color: #fff;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.main .main-imgs .right .right-bot:hover {
+  background-size: 700px;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.main .main-services {
+  height: 82px;
+  margin: 0px 15px;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .main-services .service {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .main-services .service:hover div {
+  border-color: green;
+  -webkit-transition: .7s;
+  transition: .7s;
+}
+
+.main .main-services .service p {
+  font-size: 20px;
+  color: #242424;
+  padding-top: 20px;
+}
+
+.main .main-services .service p span {
+  font-size: 16px;
+  color: #686868;
+}
+
+.main .main-services .service div {
+  width: 82px;
+  height: 82px;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #c9c6c6;
+}
+
+.main .main-services .service div svg {
+  margin-top: 20px;
+}
+
+.main .main-products1 {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .main-products1 .left {
+  width: 350px;
+  height: 500px;
+  background: url(../img/io-category-bg-1.jpg.webp) no-repeat;
+  background-size: cover;
+  margin-left: 15px;
+}
+
+.main .main-products1 .left:hover {
+  background-size: 400px;
+  -webkit-transition: background-size 1s;
+  transition: background-size 1s;
+}
+
+.main .main-products1 .left h5 {
+  font-size: 22px;
+  color: #fff;
+  padding-top: 40px;
+  margin-left: 20px;
+  position: relative;
+}
+
+.main .main-products1 .left h5 span {
+  position: absolute;
+  font-size: 16px;
+  color: #000;
+  background: #fff;
+  display: inline-block;
+  width: 35px;
+  height: 20px;
+  border-radius: 15px;
+  top: 30px;
+  text-align: center;
+}
+
+.main .main-products1 .left li {
+  margin: 15px 0px;
+}
+
+.main .main-products1 .left li a {
+  text-decoration: none;
+  font-size: 15px;
+  color: #999898;
+}
+
+.main .main-products1 .left li a:hover {
+  color: #fff;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.main .main-products1 .right {
+  width: 970px;
+  height: 530px;
+  margin-right: 15px;
+}
+
+.main .main-products1 .right .top {
+  margin-bottom: 50px;
+}
+
+.main .main-products1 .right .top h6 {
+  font-size: 18px;
+  color: #a09e9e;
+}
+
+.main .main-products1 .right .top .prod-links {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .main-products1 .right .top .prod-links .lft h4 {
+  font-size: 24px;
+}
+
+.main .main-products1 .right .top .prod-links .rght {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .main-products1 .right .top .prod-links .rght li {
+  list-style: none;
+  margin-left: 20px;
+}
+
+.main .main-products1 .right .top .prod-links .rght li a {
+  text-decoration: none;
+  color: #a09e9e;
+}
+
+.main .main-products1 .right .top .prod-links .rght li a:hover {
+  color: #000;
+  text-decoration: underline;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.main .main-products1 .right .top .prod-links .rght li #active {
+  text-decoration: underline;
+  color: #000;
+}
+
+.main .main-products1 .right .prods {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .main-products1 .right .prods .prod1 {
+  cursor: pointer;
+  background: #fff;
+  width: 230px;
+}
+
+.main .main-products1 .right .prods .prod1 .box {
+  width: 230px;
+  height: 270px;
+  background: url(../img/vega-product-1-901x1000.jpg.webp) no-repeat;
+  background-size: cover;
+  padding-top: 10px;
+}
+
+.main .main-products1 .right .prods .prod1 .box .ic1 {
+  display: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #fff;
+  text-align: center;
+  margin: 10px 0px;
+  margin-left: 200px;
+}
+
+.main .main-products1 .right .prods .prod1 .box .ic1 i {
+  margin-top: 5px;
+  color: #000;
+}
+
+.main .main-products1 .right .prods .prod1 .box .ich {
+  margin-top: 0px;
+}
+
+.main .main-products1 .right .prods .prod1 h5 {
+  font-size: 20px;
+  margin: 5px 0px;
+}
+
+.main .main-products1 .right .prods .prod1 h5 a {
+  text-decoration: none;
+  color: #000;
+}
+
+.main .main-products1 .right .prods .prod1 h5 a:hover {
+  color: #069606;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.main .main-products1 .right .prods .prod1 p {
+  font-size: 13px;
+  color: #cfcdcd;
+  margin: 10px 0px;
+}
+
+.main .main-products1 .right .prods .prod1 .opts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .main-products1 .right .prods .prod1 .opts .colors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 45px;
+}
+
+.main .main-products1 .right .prods .prod1 .opts .colors .c1 {
+  width: 15px;
+  height: 15px;
+  background: black;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.main .main-products1 .right .prods .prod1 .opts .colors .c2 {
+  width: 15px;
+  height: 15px;
+  background: gold;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.main .main-products1 .right .prods .prod1 .opts .colors .c3 {
+  width: 15px;
+  height: 15px;
+  background: green;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.main .main-products1 .right .prods .prod1 .opts .colors .c4 {
+  width: 15px;
+  height: 15px;
+  background: white;
+  border-radius: 50%;
+  border-radius: 1px solid #575656;
+}
+
+.main .main-products1 .right .prods .prod1 .opts .star {
+  color: yellow;
+}
+
+.main .main-products1 .right .prods .prod1 .prc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+.main .main-products1 .right .prods .prod1 .prc p {
+  color: #035703;
+  font-size: 18px;
+}
+
+.main .main-products1 .right .prods .prod1 .prc div {
+  width: 110px;
+  background: #fff;
+  height: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #fff;
+  padding: 10px 5px;
+  padding-right: 30px;
+  position: relative;
+  border-radius: 20px;
+  margin-left: 30px;
+}
+
+.main .main-products1 .right .prods .prod1 .prc div span {
+  border-radius: 50%;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background: #F1F1F2;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  margin-left: 10px;
+}
+
+.main .main-products1 .right .prods .prod1 .prc div span i {
+  color: #fff;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.main .main-products1 .right .prods .prod2 {
+  cursor: pointer;
+  background: #fff;
+  width: 230px;
+}
+
+.main .main-products1 .right .prods .prod2 .box {
+  width: 230px;
+  height: 270px;
+  background: url(../img/vega-product-2-1.jpg.webp) no-repeat;
+  background-size: cover;
+  padding-top: 10px;
+}
+
+.main .main-products1 .right .prods .prod2 .box .ic2 {
+  display: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #fff;
+  text-align: center;
+  margin: 10px 0px;
+  margin-left: 200px;
+}
+
+.main .main-products1 .right .prods .prod2 .box .ic2 i {
+  margin-top: 5px;
+  color: #000;
+}
+
+.main .main-products1 .right .prods .prod2 .box .ich {
+  margin-top: 0px;
+}
+
+.main .main-products1 .right .prods .prod2 h5 {
+  font-size: 20px;
+  margin: 5px 0px;
+}
+
+.main .main-products1 .right .prods .prod2 h5 a {
+  text-decoration: none;
+  color: #000;
+}
+
+.main .main-products1 .right .prods .prod2 h5 a:hover {
+  color: #069606;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.main .main-products1 .right .prods .prod2 p {
+  font-size: 13px;
+  color: #cfcdcd;
+  margin: 10px 0px;
+}
+
+.main .main-products1 .right .prods .prod2 .opts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .main-products1 .right .prods .prod2 .opts .colors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 45px;
+}
+
+.main .main-products1 .right .prods .prod2 .opts .colors .c1 {
+  width: 15px;
+  height: 15px;
+  background: black;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.main .main-products1 .right .prods .prod2 .opts .colors .c2 {
+  width: 15px;
+  height: 15px;
+  background: blue;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.main .main-products1 .right .prods .prod2 .opts .colors .c3 {
+  width: 15px;
+  height: 15px;
+  background: red;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.main .main-products1 .right .prods .prod2 .prc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+.main .main-products1 .right .prods .prod2 .prc p {
+  color: #035703;
+  font-size: 18px;
+}
+
+.main .main-products1 .right .prods .prod2 .prc div {
+  width: 110px;
+  background: #fff;
+  height: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #fff;
+  padding: 10px 5px;
+  padding-right: 30px;
+  position: relative;
+  border-radius: 20px;
+  margin-left: 30px;
+}
+
+.main .main-products1 .right .prods .prod2 .prc div span {
+  border-radius: 50%;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background: #F1F1F2;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  margin-left: 10px;
+}
+
+.main .main-products1 .right .prods .prod2 .prc div span i {
+  color: #fff;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.main .main-products1 .right .prods .prod3 {
+  cursor: pointer;
+  background: #fff;
+  width: 230px;
+}
+
+.main .main-products1 .right .prods .prod3 .box {
+  width: 230px;
+  height: 270px;
+  background: url(../img/vega-product-3.jpg.webp) no-repeat;
+  background-size: cover;
+  padding-top: 10px;
+}
+
+.main .main-products1 .right .prods .prod3 .box .ic3 {
+  display: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #fff;
+  text-align: center;
+  margin: 10px 0px;
+  margin-left: 200px;
+}
+
+.main .main-products1 .right .prods .prod3 .box .ic3 i {
+  margin-top: 5px;
+  color: #000;
+}
+
+.main .main-products1 .right .prods .prod3 .box .ich {
+  margin-top: 0px;
+}
+
+.main .main-products1 .right .prods .prod3 h5 {
+  font-size: 20px;
+  margin: 5px 0px;
+}
+
+.main .main-products1 .right .prods .prod3 h5 a {
+  text-decoration: none;
+  color: #000;
+}
+
+.main .main-products1 .right .prods .prod3 h5 a:hover {
+  color: #069606;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.main .main-products1 .right .prods .prod3 p {
+  font-size: 13px;
+  color: #cfcdcd;
+  margin: 10px 0px;
+}
+
+.main .main-products1 .right .prods .prod3 .opts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .main-products1 .right .prods .prod3 .opts .colors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 75px;
+}
+
+.main .main-products1 .right .prods .prod3 .opts .colors .c1 {
+  width: 15px;
+  height: 15px;
+  background: gold;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.main .main-products1 .right .prods .prod3 .opts .colors .c2 {
+  width: 15px;
+  height: 15px;
+  background: gray;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.main .main-products1 .right .prods .prod3 .opts .star {
+  color: yellow;
+}
+
+.main .main-products1 .right .prods .prod3 .prc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+.main .main-products1 .right .prods .prod3 .prc p {
+  color: #035703;
+  font-size: 18px;
+}
+
+.main .main-products1 .right .prods .prod3 .prc div {
+  width: 110px;
+  background: #fff;
+  height: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #fff;
+  padding: 10px 5px;
+  padding-right: 30px;
+  position: relative;
+  border-radius: 20px;
+  margin-left: 30px;
+}
+
+.main .main-products1 .right .prods .prod3 .prc div span {
+  border-radius: 50%;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background: #F1F1F2;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  margin-left: 10px;
+}
+
+.main .main-products1 .right .prods .prod3 .prc div span i {
+  color: #fff;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.main .main-products1 .right .prods .prod4 {
+  cursor: pointer;
+  background: #fff;
+  width: 230px;
+}
+
+.main .main-products1 .right .prods .prod4 .box {
+  width: 230px;
+  height: 270px;
+  background: url(../img/vega-product-13-1.jpg.webp) no-repeat;
+  background-size: cover;
+  padding-top: 10px;
+}
+
+.main .main-products1 .right .prods .prod4 .box .ic4 {
+  display: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #fff;
+  text-align: center;
+  margin: 10px 0px;
+  margin-left: 200px;
+}
+
+.main .main-products1 .right .prods .prod4 .box .ic4 i {
+  margin-top: 5px;
+  color: #000;
+}
+
+.main .main-products1 .right .prods .prod4 .box .ich {
+  margin-top: 0px;
+}
+
+.main .main-products1 .right .prods .prod4 h5 {
+  font-size: 20px;
+  margin: 5px 0px;
+}
+
+.main .main-products1 .right .prods .prod4 h5 a {
+  text-decoration: none;
+  color: #000;
+}
+
+.main .main-products1 .right .prods .prod4 h5 a:hover {
+  color: #069606;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.main .main-products1 .right .prods .prod4 p {
+  font-size: 13px;
+  color: #cfcdcd;
+  margin: 10px 0px;
+}
+
+.main .main-products1 .right .prods .prod4 .opts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .main-products1 .right .prods .prod4 .opts .colors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 45px;
+}
+
+.main .main-products1 .right .prods .prod4 .opts .colors .c1 {
+  width: 15px;
+  height: 15px;
+  background: black;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.main .main-products1 .right .prods .prod4 .opts .colors .c2 {
+  width: 15px;
+  height: 15px;
+  background: blue;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.main .main-products1 .right .prods .prod4 .opts .colors .c3 {
+  width: 15px;
+  height: 15px;
+  background: red;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.main .main-products1 .right .prods .prod4 .opts .colors .c4 {
+  width: 15px;
+  height: 15px;
+  background: yellow;
+  border-radius: 50%;
+  border-radius: 1px solid #575656;
+}
+
+.main .main-products1 .right .prods .prod4 .prc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+.main .main-products1 .right .prods .prod4 .prc p {
+  color: #035703;
+  font-size: 18px;
+}
+
+.main .main-products1 .right .prods .prod4 .prc div {
+  width: 110px;
+  background: #fff;
+  height: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #fff;
+  padding: 10px 5px;
+  padding-right: 30px;
+  position: relative;
+  border-radius: 20px;
+  margin-left: 30px;
+}
+
+.main .main-products1 .right .prods .prod4 .prc div span {
+  border-radius: 50%;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background: #F1F1F2;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  margin-left: 10px;
+}
+
+.main .main-products1 .right .prods .prod4 .prc div span i {
+  color: #fff;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.main .main-products2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .main-products2 .left {
+  width: 350px;
+  height: 500px;
+  background: url(../img/io-category-bg-2.jpg.webp) no-repeat;
+  background-size: cover;
+  margin-left: 15px;
+}
+
+.main .main-products2 .left:hover {
+  background-size: 400px;
+  -webkit-transition: background-size 1s;
+  transition: background-size 1s;
+}
+
+.main .main-products2 .left h5 {
+  font-size: 22px;
+  color: #fff;
+  padding-top: 40px;
+  margin-left: 20px;
+  position: relative;
+}
+
+.main .main-products2 .left h5 span {
+  position: absolute;
+  font-size: 16px;
+  color: #000;
+  background: #fff;
+  display: inline-block;
+  width: 35px;
+  height: 20px;
+  border-radius: 15px;
+  top: 30px;
+  text-align: center;
+}
+
+.main .main-products2 .left li {
+  margin: 15px 0px;
+  list-style: none;
+  margin-left: 20px;
+}
+
+.main .main-products2 .left li a {
+  text-decoration: none;
+  font-size: 15px;
+  color: #999898;
+}
+
+.main .main-products2 .left li a:hover {
+  color: #fff;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.main .main-products2 .right {
+  width: 970px;
+  height: 530px;
+  margin-right: 15px;
+}
+
+.main .main-products2 .right .prods {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 80px;
+}
+
+.main .main-products2 .right .prods .prod5 {
+  cursor: pointer;
+  background: #fff;
+  width: 230px;
+}
+
+.main .main-products2 .right .prods .prod5 .box {
+  width: 230px;
+  height: 270px;
+  background: url(../img/vega-product-4.jpg.webp) no-repeat;
+  background-size: cover;
+  padding-top: 10px;
+}
+
+.main .main-products2 .right .prods .prod5 .box .ic5 {
+  display: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #fff;
+  text-align: center;
+  margin: 10px 0px;
+  margin-left: 200px;
+}
+
+.main .main-products2 .right .prods .prod5 .box .ic5 i {
+  margin-top: 5px;
+  color: #000;
+}
+
+.main .main-products2 .right .prods .prod5 .box .ich {
+  margin-top: 0px;
+}
+
+.main .main-products2 .right .prods .prod5 h5 {
+  font-size: 20px;
+  margin: 5px 0px;
+}
+
+.main .main-products2 .right .prods .prod5 h5 a {
+  text-decoration: none;
+  color: #000;
+}
+
+.main .main-products2 .right .prods .prod5 h5 a:hover {
+  color: #069606;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.main .main-products2 .right .prods .prod5 p {
+  font-size: 13px;
+  color: #cfcdcd;
+  margin: 10px 0px;
+}
+
+.main .main-products2 .right .prods .prod5 .opts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .main-products2 .right .prods .prod5 .opts .colors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 45px;
+}
+
+.main .main-products2 .right .prods .prod5 .opts .colors .c1 {
+  width: 15px;
+  height: 15px;
+  background: beige;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.main .main-products2 .right .prods .prod5 .opts .colors .c2 {
+  width: 15px;
+  height: 15px;
+  background: black;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.main .main-products2 .right .prods .prod5 .opts .colors .c3 {
+  width: 15px;
+  height: 15px;
+  background: green;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.main .main-products2 .right .prods .prod5 .opts .star {
+  color: yellow;
+}
+
+.main .main-products2 .right .prods .prod5 .prc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+.main .main-products2 .right .prods .prod5 .prc p {
+  color: #035703;
+  font-size: 18px;
+}
+
+.main .main-products2 .right .prods .prod5 .prc div {
+  width: 110px;
+  background: #fff;
+  height: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #fff;
+  padding: 10px 5px;
+  padding-right: 30px;
+  position: relative;
+  border-radius: 20px;
+  margin-left: 30px;
+}
+
+.main .main-products2 .right .prods .prod5 .prc div span {
+  border-radius: 50%;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background: #F1F1F2;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  margin-left: 10px;
+}
+
+.main .main-products2 .right .prods .prod5 .prc div span i {
+  color: #fff;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.main .main-products2 .right .prods .prod6 {
+  cursor: pointer;
+  background: #fff;
+  width: 230px;
+}
+
+.main .main-products2 .right .prods .prod6 .box {
+  width: 230px;
+  height: 270px;
+  background: url(../img/vega-product-5.jpg.webp) no-repeat;
+  background-size: cover;
+  padding-top: 10px;
+}
+
+.main .main-products2 .right .prods .prod6 .box .ic6 {
+  display: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #fff;
+  text-align: center;
+  margin: 10px 0px;
+  margin-left: 200px;
+}
+
+.main .main-products2 .right .prods .prod6 .box .ic6 i {
+  margin-top: 5px;
+  color: #000;
+}
+
+.main .main-products2 .right .prods .prod6 .box .ich {
+  margin-top: 0px;
+}
+
+.main .main-products2 .right .prods .prod6 h5 {
+  font-size: 20px;
+  margin: 5px 0px;
+}
+
+.main .main-products2 .right .prods .prod6 h5 a {
+  text-decoration: none;
+  color: #000;
+}
+
+.main .main-products2 .right .prods .prod6 h5 a:hover {
+  color: #069606;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.main .main-products2 .right .prods .prod6 p {
+  font-size: 13px;
+  color: #cfcdcd;
+  margin: 10px 0px;
+}
+
+.main .main-products2 .right .prods .prod6 .opts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .main-products2 .right .prods .prod6 .opts .colors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 105px;
+}
+
+.main .main-products2 .right .prods .prod6 .opts .colors .c1 {
+  width: 15px;
+  height: 15px;
+  background: beige;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.main .main-products2 .right .prods .prod6 .opts .colors .c2 {
+  width: 15px;
+  height: 15px;
+  background: black;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.main .main-products2 .right .prods .prod6 .opts .colors .c3 {
+  width: 15px;
+  height: 15px;
+  background: green;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.main .main-products2 .right .prods .prod6 .opts .star {
+  color: yellow;
+}
+
+.main .main-products2 .right .prods .prod6 .prc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+.main .main-products2 .right .prods .prod6 .prc p {
+  color: #035703;
+  font-size: 18px;
+}
+
+.main .main-products2 .right .prods .prod6 .prc div {
+  width: 110px;
+  background: #fff;
+  height: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #fff;
+  padding: 10px 5px;
+  padding-right: 30px;
+  position: relative;
+  border-radius: 20px;
+  margin-left: 30px;
+}
+
+.main .main-products2 .right .prods .prod6 .prc div span {
+  border-radius: 50%;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background: #F1F1F2;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  margin-left: 10px;
+}
+
+.main .main-products2 .right .prods .prod6 .prc div span i {
+  color: #fff;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.main .main-products2 .right .prods .prod7 {
+  cursor: pointer;
+  background: #fff;
+  width: 230px;
+}
+
+.main .main-products2 .right .prods .prod7 .box {
+  width: 230px;
+  height: 270px;
+  background: url(../img/vega-product-6.jpg.webp) no-repeat;
+  background-size: cover;
+  padding-top: 10px;
+}
+
+.main .main-products2 .right .prods .prod7 .box .ic7 {
+  display: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #fff;
+  text-align: center;
+  margin: 10px 0px;
+  margin-left: 200px;
+}
+
+.main .main-products2 .right .prods .prod7 .box .ic7 i {
+  margin-top: 5px;
+  color: #000;
+}
+
+.main .main-products2 .right .prods .prod7 .box .ich {
+  margin-top: 0px;
+}
+
+.main .main-products2 .right .prods .prod7 h5 {
+  font-size: 20px;
+  margin: 5px 0px;
+}
+
+.main .main-products2 .right .prods .prod7 h5 a {
+  text-decoration: none;
+  color: #000;
+}
+
+.main .main-products2 .right .prods .prod7 h5 a:hover {
+  color: #069606;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.main .main-products2 .right .prods .prod7 p {
+  font-size: 13px;
+  color: #cfcdcd;
+  margin: 10px 0px;
+}
+
+.main .main-products2 .right .prods .prod7 .opts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .main-products2 .right .prods .prod7 .opts .colors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 45px;
+}
+
+.main .main-products2 .right .prods .prod7 .opts .colors .c1 {
+  width: 15px;
+  height: 15px;
+  background: black;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.main .main-products2 .right .prods .prod7 .opts .colors .c2 {
+  width: 15px;
+  height: 15px;
+  background: gold;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.main .main-products2 .right .prods .prod7 .opts .colors .c3 {
+  width: 15px;
+  height: 15px;
+  background: green;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.main .main-products2 .right .prods .prod7 .opts .colors .c4 {
+  width: 15px;
+  height: 15px;
+  background: white;
+  border-radius: 50%;
+  border-radius: 1px solid #575656;
+}
+
+.main .main-products2 .right .prods .prod7 .opts .star {
+  color: yellow;
+}
+
+.main .main-products2 .right .prods .prod7 .prc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+.main .main-products2 .right .prods .prod7 .prc p {
+  color: #035703;
+  font-size: 18px;
+}
+
+.main .main-products2 .right .prods .prod7 .prc div {
+  width: 110px;
+  background: #fff;
+  height: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #fff;
+  padding: 10px 5px;
+  padding-right: 30px;
+  position: relative;
+  border-radius: 20px;
+  margin-left: 30px;
+}
+
+.main .main-products2 .right .prods .prod7 .prc div span {
+  border-radius: 50%;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background: #F1F1F2;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  margin-left: 10px;
+}
+
+.main .main-products2 .right .prods .prod7 .prc div span i {
+  color: #fff;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.main .main-products2 .right .prods .prod8 {
+  cursor: pointer;
+  background: #fff;
+  width: 230px;
+}
+
+.main .main-products2 .right .prods .prod8 .box {
+  width: 230px;
+  height: 270px;
+  background: url(../img/vega-product-14.jpg.webp) no-repeat;
+  background-size: cover;
+  padding-top: 10px;
+}
+
+.main .main-products2 .right .prods .prod8 .box .ic8 {
+  display: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #fff;
+  text-align: center;
+  margin: 10px 0px;
+  margin-left: 200px;
+}
+
+.main .main-products2 .right .prods .prod8 .box .ic8 i {
+  margin-top: 5px;
+  color: #000;
+}
+
+.main .main-products2 .right .prods .prod8 .box .ich {
+  margin-top: 0px;
+}
+
+.main .main-products2 .right .prods .prod8 h5 {
+  font-size: 20px;
+  margin: 5px 0px;
+}
+
+.main .main-products2 .right .prods .prod8 h5 a {
+  text-decoration: none;
+  color: #000;
+}
+
+.main .main-products2 .right .prods .prod8 h5 a:hover {
+  color: #069606;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.main .main-products2 .right .prods .prod8 p {
+  font-size: 13px;
+  color: #cfcdcd;
+  margin: 10px 0px;
+}
+
+.main .main-products2 .right .prods .prod8 .opts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .main-products2 .right .prods .prod8 .opts .colors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 45px;
+}
+
+.main .main-products2 .right .prods .prod8 .opts .colors .c1 {
+  width: 15px;
+  height: 15px;
+  background: black;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.main .main-products2 .right .prods .prod8 .opts .colors .c2 {
+  width: 15px;
+  height: 15px;
+  background: gold;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.main .main-products2 .right .prods .prod8 .opts .colors .c3 {
+  width: 15px;
+  height: 15px;
+  background: green;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.main .main-products2 .right .prods .prod8 .opts .colors .c4 {
+  width: 15px;
+  height: 15px;
+  background: white;
+  border-radius: 50%;
+  border-radius: 1px solid #575656;
+}
+
+.main .main-products2 .right .prods .prod8 .opts .star {
+  color: yellow;
+}
+
+.main .main-products2 .right .prods .prod8 .prc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+.main .main-products2 .right .prods .prod8 .prc p {
+  color: #035703;
+  font-size: 18px;
+}
+
+.main .main-products2 .right .prods .prod8 .prc div {
+  width: 110px;
+  background: #fff;
+  height: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #fff;
+  padding: 10px 5px;
+  padding-right: 30px;
+  position: relative;
+  border-radius: 20px;
+  margin-left: 30px;
+}
+
+.main .main-products2 .right .prods .prod8 .prc div span {
+  border-radius: 50%;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background: #F1F1F2;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  margin-left: 10px;
+}
+
+.main .main-products2 .right .prods .prod8 .prc div span i {
+  color: #fff;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.main-2prod {
+  margin: 0px 20px;
+  margin-top: 50px;
+  width: 1350px;
+  height: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-2prod .prd2 {
+  color: #fff;
+  width: 660px;
+  height: 200px;
+  padding-top: 250px;
+}
+
+.main-2prod .prd2 h6 {
+  font-size: 16px;
+  margin-left: 20px;
+  font-weight: lighter;
+}
+
+.main-2prod .prd2 h4 {
+  font-size: 26px;
+  margin: 20px 0px;
+  margin-left: 20px;
+}
+
+.main-2prod .prd2 button {
+  width: 70px;
+  height: 35px;
+  border: none;
+  border-radius: 0px;
+  font-size: 12px;
+  color: #000;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.main-2prod .prd2 button:hover {
+  background: #E9E8E9;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.main-2prod .left {
+  background: url(../img/vega-banner-bg-4.jpg.webp) no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.main-2prod .left:hover {
+  background-size: 700px;
+}
+
+.main-2prod .right {
+  background: url(../img/vega-banner-bg-5-opt.jpg.webp) no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.main-2prod .right:hover {
+  background-size: 700px;
+}
+
+.topSell {
+  margin: 0px 20px;
+  margin-top: 100px;
+}
+
+.topSell h6 {
+  font-size: 16px;
+  color: #6E6E6E;
+  text-align: center;
+}
+
+.topSell h4 {
+  font-size: 26px;
+  color: #242424;
+  text-align: center;
+  margin: 20px 0px;
+}
+
+.topSell .topSellProds {
+  width: 1350px;
+  height: 410px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.topSell .topSellProds .prod9 {
+  cursor: pointer;
+  background: #fff;
+  width: 230px;
+}
+
+.topSell .topSellProds .prod9 .box {
+  width: 230px;
+  height: 270px;
+  background: url(../img/vega-product-4.jpg.webp) no-repeat;
+  background-size: cover;
+  padding-top: 10px;
+}
+
+.topSell .topSellProds .prod9 .box .ic9 {
+  display: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #fff;
+  text-align: center;
+  margin: 10px 0px;
+  margin-left: 200px;
+}
+
+.topSell .topSellProds .prod9 .box .ic9 i {
+  margin-top: 5px;
+  color: #000;
+}
+
+.topSell .topSellProds .prod9 .box .ich {
+  margin-top: 0px;
+}
+
+.topSell .topSellProds .prod9 h5 {
+  font-size: 20px;
+  margin: 5px 0px;
+}
+
+.topSell .topSellProds .prod9 h5 a {
+  text-decoration: none;
+  color: #000;
+}
+
+.topSell .topSellProds .prod9 h5 a:hover {
+  color: #069606;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.topSell .topSellProds .prod9 p {
+  font-size: 13px;
+  color: #cfcdcd;
+  margin: 10px 0px;
+}
+
+.topSell .topSellProds .prod9 .opts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.topSell .topSellProds .prod9 .opts .colors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 45px;
+}
+
+.topSell .topSellProds .prod9 .opts .colors .c1 {
+  width: 15px;
+  height: 15px;
+  background: beige;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.topSell .topSellProds .prod9 .opts .colors .c2 {
+  width: 15px;
+  height: 15px;
+  background: black;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.topSell .topSellProds .prod9 .opts .colors .c3 {
+  width: 15px;
+  height: 15px;
+  background: green;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.topSell .topSellProds .prod9 .opts .star {
+  color: yellow;
+}
+
+.topSell .topSellProds .prod9 .prc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+.topSell .topSellProds .prod9 .prc p {
+  color: #035703;
+  font-size: 18px;
+}
+
+.topSell .topSellProds .prod9 .prc div {
+  width: 110px;
+  background: #fff;
+  height: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #fff;
+  padding: 10px 5px;
+  padding-right: 30px;
+  position: relative;
+  border-radius: 20px;
+  margin-left: 30px;
+}
+
+.topSell .topSellProds .prod9 .prc div span {
+  border-radius: 50%;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background: #F1F1F2;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  margin-left: 10px;
+}
+
+.topSell .topSellProds .prod9 .prc div span i {
+  color: #fff;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.topSell .topSellProds .prod10 {
+  cursor: pointer;
+  background: #fff;
+  width: 230px;
+}
+
+.topSell .topSellProds .prod10 .box {
+  width: 230px;
+  height: 270px;
+  background: url(../img/vega-product-2-1.jpg.webp) no-repeat;
+  background-size: cover;
+  padding-top: 10px;
+}
+
+.topSell .topSellProds .prod10 .box .ic10 {
+  display: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #fff;
+  text-align: center;
+  margin: 10px 0px;
+  margin-left: 200px;
+}
+
+.topSell .topSellProds .prod10 .box .ic10 i {
+  margin-top: 5px;
+  color: #000;
+}
+
+.topSell .topSellProds .prod10 .box .ich {
+  margin-top: 0px;
+}
+
+.topSell .topSellProds .prod10 h5 {
+  font-size: 20px;
+  margin: 5px 0px;
+}
+
+.topSell .topSellProds .prod10 h5 a {
+  text-decoration: none;
+  color: #000;
+}
+
+.topSell .topSellProds .prod10 h5 a:hover {
+  color: #069606;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.topSell .topSellProds .prod10 p {
+  font-size: 13px;
+  color: #cfcdcd;
+  margin: 10px 0px;
+}
+
+.topSell .topSellProds .prod10 .opts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.topSell .topSellProds .prod10 .opts .colors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 45px;
+}
+
+.topSell .topSellProds .prod10 .opts .colors .c1 {
+  width: 15px;
+  height: 15px;
+  background: black;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.topSell .topSellProds .prod10 .opts .colors .c2 {
+  width: 15px;
+  height: 15px;
+  background: blue;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.topSell .topSellProds .prod10 .opts .colors .c3 {
+  width: 15px;
+  height: 15px;
+  background: red;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.topSell .topSellProds .prod10 .prc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+.topSell .topSellProds .prod10 .prc p {
+  color: #035703;
+  font-size: 18px;
+}
+
+.topSell .topSellProds .prod10 .prc div {
+  width: 110px;
+  background: #fff;
+  height: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #fff;
+  padding: 10px 5px;
+  padding-right: 30px;
+  position: relative;
+  border-radius: 20px;
+  margin-left: 30px;
+}
+
+.topSell .topSellProds .prod10 .prc div span {
+  border-radius: 50%;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background: #F1F1F2;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  margin-left: 10px;
+}
+
+.topSell .topSellProds .prod10 .prc div span i {
+  color: #fff;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.topSell .topSellProds .prod11 {
+  cursor: pointer;
+  background: #fff;
+  width: 230px;
+}
+
+.topSell .topSellProds .prod11 .box {
+  width: 230px;
+  height: 270px;
+  background: url(../img/vega-product-12.jpg.webp) no-repeat;
+  background-size: cover;
+  padding-top: 10px;
+}
+
+.topSell .topSellProds .prod11 .box .ic11 {
+  display: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #fff;
+  text-align: center;
+  margin: 10px 0px;
+  margin-left: 200px;
+}
+
+.topSell .topSellProds .prod11 .box .ic11 i {
+  margin-top: 5px;
+  color: #000;
+}
+
+.topSell .topSellProds .prod11 .box .ich {
+  margin-top: 0px;
+}
+
+.topSell .topSellProds .prod11 h5 {
+  font-size: 20px;
+  margin: 5px 0px;
+}
+
+.topSell .topSellProds .prod11 h5 a {
+  text-decoration: none;
+  color: #000;
+}
+
+.topSell .topSellProds .prod11 h5 a:hover {
+  color: #069606;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.topSell .topSellProds .prod11 p {
+  font-size: 13px;
+  color: #cfcdcd;
+  margin: 10px 0px;
+}
+
+.topSell .topSellProds .prod11 .opts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.topSell .topSellProds .prod11 .opts .star {
+  color: yellow;
+}
+
+.topSell .topSellProds .prod11 .prc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+.topSell .topSellProds .prod11 .prc p {
+  color: #035703;
+  font-size: 18px;
+}
+
+.topSell .topSellProds .prod11 .prc div {
+  width: 110px;
+  background: #fff;
+  height: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #fff;
+  padding: 10px 5px;
+  padding-right: 30px;
+  position: relative;
+  border-radius: 20px;
+  margin-left: 30px;
+}
+
+.topSell .topSellProds .prod11 .prc div span {
+  border-radius: 50%;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background: #F1F1F2;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  margin-left: 10px;
+}
+
+.topSell .topSellProds .prod11 .prc div span i {
+  color: #fff;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.topSell .topSellProds .prod12 {
+  cursor: pointer;
+  background: #fff;
+  width: 230px;
+}
+
+.topSell .topSellProds .prod12 .box {
+  width: 230px;
+  height: 270px;
+  background: url(../img/vega-product-11.jpg.webp) no-repeat;
+  background-size: cover;
+  padding-top: 10px;
+}
+
+.topSell .topSellProds .prod12 .box .ic12 {
+  display: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #fff;
+  text-align: center;
+  margin: 10px 0px;
+  margin-left: 200px;
+}
+
+.topSell .topSellProds .prod12 .box .ic12 i {
+  margin-top: 5px;
+  color: #000;
+}
+
+.topSell .topSellProds .prod12 .box .ich {
+  margin-top: 0px;
+}
+
+.topSell .topSellProds .prod12 h5 {
+  font-size: 20px;
+  margin: 5px 0px;
+}
+
+.topSell .topSellProds .prod12 h5 a {
+  text-decoration: none;
+  color: #000;
+}
+
+.topSell .topSellProds .prod12 h5 a:hover {
+  color: #069606;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.topSell .topSellProds .prod12 p {
+  font-size: 13px;
+  color: #cfcdcd;
+  margin: 10px 0px;
+}
+
+.topSell .topSellProds .prod12 .opts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.topSell .topSellProds .prod12 .opts .colors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 45px;
+}
+
+.topSell .topSellProds .prod12 .opts .colors .c1 {
+  width: 15px;
+  height: 15px;
+  background: black;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.topSell .topSellProds .prod12 .opts .colors .c2 {
+  width: 15px;
+  height: 15px;
+  background: gray;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.topSell .topSellProds .prod12 .prc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+.topSell .topSellProds .prod12 .prc p {
+  color: #035703;
+  font-size: 18px;
+}
+
+.topSell .topSellProds .prod12 .prc div {
+  width: 110px;
+  background: #fff;
+  height: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #fff;
+  padding: 10px 5px;
+  padding-right: 30px;
+  position: relative;
+  border-radius: 20px;
+  margin-left: 30px;
+}
+
+.topSell .topSellProds .prod12 .prc div span {
+  border-radius: 50%;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background: #F1F1F2;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  margin-left: 10px;
+}
+
+.topSell .topSellProds .prod12 .prc div span i {
+  color: #fff;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.topSell .topSellProds .prod13 {
+  cursor: pointer;
+  background: #fff;
+  width: 230px;
+}
+
+.topSell .topSellProds .prod13 .box {
+  width: 230px;
+  height: 270px;
+  background: url(../img/vega-product-14.jpg.webp) no-repeat;
+  background-size: cover;
+  padding-top: 10px;
+}
+
+.topSell .topSellProds .prod13 .box .ic13 {
+  display: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #fff;
+  text-align: center;
+  margin: 10px 0px;
+  margin-left: 200px;
+}
+
+.topSell .topSellProds .prod13 .box .ic13 i {
+  margin-top: 5px;
+  color: #000;
+}
+
+.topSell .topSellProds .prod13 .box .ich {
+  margin-top: 0px;
+}
+
+.topSell .topSellProds .prod13 h5 {
+  font-size: 20px;
+  margin: 5px 0px;
+}
+
+.topSell .topSellProds .prod13 h5 a {
+  text-decoration: none;
+  color: #000;
+}
+
+.topSell .topSellProds .prod13 h5 a:hover {
+  color: #069606;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.topSell .topSellProds .prod13 p {
+  font-size: 13px;
+  color: #cfcdcd;
+  margin: 10px 0px;
+}
+
+.topSell .topSellProds .prod13 .opts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.topSell .topSellProds .prod13 .opts .colors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 45px;
+}
+
+.topSell .topSellProds .prod13 .opts .colors .c1 {
+  width: 15px;
+  height: 15px;
+  background: beige;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.topSell .topSellProds .prod13 .opts .colors .c2 {
+  width: 15px;
+  height: 15px;
+  background: black;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.topSell .topSellProds .prod13 .opts .colors .c3 {
+  width: 15px;
+  height: 15px;
+  background: green;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.topSell .topSellProds .prod13 .opts .star {
+  color: yellow;
+}
+
+.topSell .topSellProds .prod13 .prc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+.topSell .topSellProds .prod13 .prc p {
+  color: #035703;
+  font-size: 18px;
+}
+
+.topSell .topSellProds .prod13 .prc div {
+  width: 110px;
+  background: #fff;
+  height: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #fff;
+  padding: 10px 5px;
+  padding-right: 30px;
+  position: relative;
+  border-radius: 20px;
+  margin-left: 30px;
+}
+
+.topSell .topSellProds .prod13 .prc div span {
+  border-radius: 50%;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background: #F1F1F2;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  margin-left: 10px;
+}
+
+.topSell .topSellProds .prod13 .prc div span i {
+  color: #fff;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.main-articles {
+  width: 1350px;
+  height: 500px;
+  margin: 0px 20px;
+  margin-top: 100px;
+}
+
+.main-articles h6 {
+  font-size: 16px;
+  color: #8A8A8A;
+  text-align: center;
+}
+
+.main-articles h4 {
+  font-size: 26px;
+  color: #242424;
+  text-align: center;
+  margin: 20px 0px;
+}
+
+.main-articles .articles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-articles .articles .art1 {
+  background: #fff;
+  width: 300px;
+  height: 400px;
+}
+
+.main-articles .articles .art1:hover .box-art {
+  background-size: 320px;
+}
+
+.main-articles .articles .art1 .box-art {
+  width: 300px;
+  height: 200px;
+  background: url(../img/vega-blog-3-min-1200x776.jpg) no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.main-articles .articles .art1 h4 {
+  text-align: unset;
+  font-size: 23px;
+}
+
+.main-articles .articles .art1 h4 a {
+  text-decoration: none;
+  color: #242424;
+}
+
+.main-articles .articles .art1 h4 a:hover {
+  color: #59946A;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.main-articles .articles .art1 .date {
+  font-size: 14px;
+  color: #737373;
+}
+
+.main-articles .articles .art1 .date span {
+  cursor: pointer;
+}
+
+.main-articles .articles .art1 .date span:hover {
+  color: #242424;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.main-articles .articles .art1 p {
+  margin: 20px 0px;
+  font-size: 18px;
+  color: #737373;
+}
+
+.main-articles .articles .art1 .read {
+  font-size: 14px;
+  color: #242424;
+  text-decoration: none;
+}
+
+.main-articles .articles .art1 .read i {
+  color: #73A581;
+}
+
+.main-articles .articles .art1 .read:hover {
+  color: #737373;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.main-articles .articles .art1 .read:hover i {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.main-articles .articles .art2 {
+  background: #fff;
+  width: 300px;
+  height: 400px;
+}
+
+.main-articles .articles .art2:hover .box-art {
+  background-size: 320px;
+}
+
+.main-articles .articles .art2 .box-art {
+  width: 300px;
+  height: 200px;
+  background: url(../img/vega-blog-4-min-1200x776.jpg) no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.main-articles .articles .art2 h4 {
+  text-align: unset;
+  font-size: 23px;
+}
+
+.main-articles .articles .art2 h4 a {
+  text-decoration: none;
+  color: #242424;
+}
+
+.main-articles .articles .art2 h4 a:hover {
+  color: #59946A;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.main-articles .articles .art2 .date {
+  font-size: 14px;
+  color: #737373;
+}
+
+.main-articles .articles .art2 .date span {
+  cursor: pointer;
+}
+
+.main-articles .articles .art2 .date span:hover {
+  color: #242424;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.main-articles .articles .art2 p {
+  margin: 20px 0px;
+  font-size: 18px;
+  color: #737373;
+}
+
+.main-articles .articles .art2 .read {
+  font-size: 14px;
+  color: #242424;
+  text-decoration: none;
+}
+
+.main-articles .articles .art2 .read i {
+  color: #73A581;
+}
+
+.main-articles .articles .art2 .read:hover {
+  color: #737373;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.main-articles .articles .art2 .read:hover i {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.main-articles .articles .art3 {
+  background: #fff;
+  width: 300px;
+  height: 400px;
+}
+
+.main-articles .articles .art3:hover .box-art {
+  background-size: 320px;
+}
+
+.main-articles .articles .art3 .box-art {
+  width: 300px;
+  height: 200px;
+  background: url(../img/vega-blog-2-min-1200x776.jpg) no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.main-articles .articles .art3 h4 {
+  text-align: unset;
+  font-size: 23px;
+}
+
+.main-articles .articles .art3 h4 a {
+  text-decoration: none;
+  color: #242424;
+}
+
+.main-articles .articles .art3 h4 a:hover {
+  color: #59946A;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.main-articles .articles .art3 .date {
+  font-size: 14px;
+  color: #737373;
+}
+
+.main-articles .articles .art3 .date span {
+  cursor: pointer;
+}
+
+.main-articles .articles .art3 .date span:hover {
+  color: #242424;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.main-articles .articles .art3 p {
+  margin: 20px 0px;
+  font-size: 18px;
+  color: #737373;
+}
+
+.main-articles .articles .art3 .read {
+  font-size: 14px;
+  color: #242424;
+  text-decoration: none;
+}
+
+.main-articles .articles .art3 .read i {
+  color: #73A581;
+}
+
+.main-articles .articles .art3 .read:hover {
+  color: #737373;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.main-articles .articles .art3 .read:hover i {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.main-articles .articles .art4 {
+  background: #fff;
+  width: 300px;
+  height: 400px;
+}
+
+.main-articles .articles .art4:hover .box-art {
+  background-size: 320px;
+}
+
+.main-articles .articles .art4 .box-art {
+  width: 300px;
+  height: 200px;
+  background: url(../img/vega-blog-1-min-1200x776.jpg) no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.main-articles .articles .art4 h4 {
+  text-align: unset;
+  font-size: 23px;
+}
+
+.main-articles .articles .art4 h4 a {
+  text-decoration: none;
+  color: #242424;
+}
+
+.main-articles .articles .art4 h4 a:hover {
+  color: #59946A;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.main-articles .articles .art4 .date {
+  font-size: 14px;
+  color: #737373;
+}
+
+.main-articles .articles .art4 .date span {
+  cursor: pointer;
+}
+
+.main-articles .articles .art4 .date span:hover {
+  color: #242424;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.main-articles .articles .art4 p {
+  margin: 20px 0px;
+  font-size: 18px;
+  color: #737373;
+}
+
+.main-articles .articles .art4 .read {
+  font-size: 14px;
+  color: #242424;
+  text-decoration: none;
+}
+
+.main-articles .articles .art4 .read i {
+  color: #73A581;
+}
+
+.main-articles .articles .art4 .read:hover {
+  color: #737373;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.main-articles .articles .art4 .read:hover i {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.main-forms {
+  width: 1350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0px 20px;
+  margin-left: -5px;
+  margin-top: 50px;
+}
+
+.main-forms .left {
+  width: 660px;
+  height: 350px;
+  background: url(../img/vega-bordered-1-opt.jpeg) no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-forms .left .left-in {
+  width: 640px;
+  height: 310px;
+  background: #fff;
+  text-align: center;
+}
+
+.main-forms .left .left-in h3 {
+  padding-top: 80px;
+  font-size: 26px;
+  color: #242424;
+}
+
+.main-forms .left .left-in p {
+  font-size: 16px;
+  color: #686868;
+  margin: 20px 0px;
+}
+
+.main-forms .left .left-in input {
+  width: 200px;
+  height: 35px;
+  border-radius: none;
+  border: 1px solid #e4e4e4;
+  padding-left: 20px;
+  outline: none;
+}
+
+.main-forms .left .left-in button {
+  width: 100px;
+  height: 37px;
+  background: #439665;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+.main-forms .left .left-in button:hover {
+  background: #538A62;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.main-forms .right {
+  width: 660px;
+  height: 350px;
+  background: url(../img/vega-blog-4-min-1200x776.jpg) no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-forms .right .right-in {
+  width: 640px;
+  height: 310px;
+  background: #fff;
+  text-align: center;
+}
+
+.main-forms .right .right-in h3 {
+  padding-top: 80px;
+  font-size: 26px;
+  color: #242424;
+}
+
+.main-forms .right .right-in p {
+  font-size: 16px;
+  color: #686868;
+  margin: 20px 0px;
+}
+
+.main-forms .right .right-in .images img {
+  cursor: pointer;
+}
+
+.main-foot {
+  background: #282828;
+  width: 1393px;
+  margin-left: -20px;
+  margin-top: 100px;
+}
+
+.main-foot .statistics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0px 20px;
+  border-bottom: 1px solid #414244;
+}
+
+.main-foot .statistics .city {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 0px;
+}
+
+.main-foot .statistics .city svg {
+  width: 90px;
+  height: 50px;
+}
+
+.main-foot .statistics .city p {
+  margin-top: 10px;
+  color: #fff;
+}
+
+.main-foot .statistics .city p span {
+  color: #777;
+}
+
+.main-foot .sections {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0px 20px;
+  margin-top: 60px;
+  border-bottom: 1px solid #414244;
+  padding-bottom: 30px;
+}
+
+.main-foot .sections .sec {
+  width: 250px;
+}
+
+.main-foot .sections .sec img {
+  width: 157px;
+  height: 48.3px;
+}
+
+.main-foot .sections .sec p {
+  font-size: 14px;
+  margin: 20px 0px;
+  color: #ffffff99;
+}
+
+.main-foot .sections .sec .tel {
+  margin: 0;
+}
+
+.main-foot .sections .sec .mail {
+  margin: 10px 0px;
+}
+
+.main-foot .sections .sec2 h6 {
+  font-size: 16px;
+  text-align: left;
+  color: #fff;
+}
+
+.main-foot .sections .sec2 p {
+  color: #ffffff99;
+  margin: 20px 0px;
+}
+
+.main-foot .sections .sec2 li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.main-foot .sections .sec2 li a {
+  text-decoration: none;
+  color: #ffffff99;
+}
+
+.main-foot .sections .sec2 li:hover i {
+  color: #fff;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.main-foot .sections .sec2 .contacts {
+  margin-top: 20px;
+}
+
+.main-foot .sections .sec2 .contacts i {
+  color: #fff;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.main-foot .sections .sec2 .contacts i:hover {
+  color: #ffffff99;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.main-foot .sections .sec3 h6 {
+  font-size: 16px;
+  text-align: left;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.main-foot .sections .sec3 li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.main-foot .sections .sec3 li a {
+  text-decoration: none;
+  color: #ffffff99;
+}
+
+.main-foot .sections .sec3 li a:hover {
+  color: #fff;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.main-foot .copyrg {
+  margin: 0px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px 0px;
+}
+
+.main-foot .copyrg p {
+  color: #ffffff99;
+}
+
+.main-foot .copyrg p a {
+  color: #ffffff99;
+  text-decoration: none;
+}
+
+.main-foot .copyrg p a:hover {
+  color: #fff;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+/*# sourceMappingURL=style.css.map */
