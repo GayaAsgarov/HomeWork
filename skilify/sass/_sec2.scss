@@ -1,0 +1,205 @@
+.sec2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .sec2-container{
+        width: 80%;
+        .row1{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 50px;
+            margin-top: 70px;
+            h2{
+                font-size: 40px;
+                color: #302d3a;
+            }
+            button{
+                font-size: 16px;
+                color: #fff;
+                font-weight: bold;
+                padding: 10px 20px;
+                border: none;
+                background: #f56962;
+                border-radius: 4px;
+                cursor: pointer;
+                &:hover{
+                    background: #D56156;
+                    box-shadow: 1px 23px 48px -19px rgba(245,105,98,0.81);
+                    -webkit-box-shadow: 1px 23px 48px -19px rgba(245,105,98,0.81);
+                    -moz-box-shadow: 1px 23px 48px -19px rgba(245,105,98,0.81);
+                    transition: .3s;
+                }
+            }
+        }
+        .row2{
+            display: flex;
+            justify-content: space-between;
+            .cat{
+                width: 254.5px;
+                height: 328px;
+                background: darkkhaki;
+                cursor: pointer;
+                border-radius: 4px;
+                img{
+                    width: 60px;
+                    height: 60px;
+                    background: darkorange;
+                    margin-top: 20px;
+                    margin-left: 20px;
+                    border-radius: 4px;
+                }
+                h3{
+                    font-size: 22px;
+                    color: #302d3a;                  
+                    margin: 15px 0px;
+                    margin-left: 20px;
+                }
+                p{
+                    font-size: 16px;
+                    margin-left: 20px;
+                    color: #5f5982;
+                    line-height: 25px;
+                }
+                &:hover{
+                    h3{
+                        color: #fff;
+                        transition: color .5s;
+                    }
+                    p{
+                        color: #fff;
+                        transition: color .5s;
+                    }
+                    img{
+                        background: #fff;
+                    }
+                }
+            }
+            .design{
+                background: #EFEEF6;
+                img{
+                    background: #E1DDFC;
+                }
+                &:hover{
+                    background: #51459F;
+                    transition: background .5s;
+                }
+            }
+            .development{
+                background: #FCF3EA;
+                img{
+                    background: #F0DCCD;
+                }
+                &:hover{
+                    background: #E8913E;
+                    transition: background .5s;
+                }
+            }
+            .it{
+                background: #E2F7FE;
+                img{
+                    background: #C6EEFE;
+                }
+                &:hover{
+                    background: #61B8EB;
+                    transition: background .5s;
+                }
+            }
+            .business{
+                background: #EAFAEC;
+                img{
+                    background: #D6F5D8;
+                }
+                &:hover{
+                    background: #7FD178;
+                    transition: background .5s;
+                }
+            }
+        }
+        .row3{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+            .cat{
+                width: 254.5px;
+                height: 328px;
+                background: darkkhaki;
+                cursor: pointer;
+                border-radius: 4px;
+                img{
+                    width: 60px;
+                    height: 60px;
+                    background: darkorange;
+                    margin-top: 20px;
+                    margin-left: 20px;
+                    border-radius: 4px;
+                }
+                h3{
+                    font-size: 22px;
+                    color: #302d3a;                  
+                    margin: 15px 0px;
+                    margin-left: 20px;
+                }
+                p{
+                    font-size: 16px;
+                    margin-left: 20px;
+                    color: #5f5982;
+                    line-height: 25px;
+                }
+                &:hover{
+                    h3{
+                        color: #fff;
+                        transition: color .5s;
+                    }
+                    p{
+                        color: #fff;
+                        transition: color .5s;
+                    }
+                    img{
+                        background: #fff;
+                        transition: background .5s;
+                    }
+                }
+            }
+            .marketing{
+                background: #EAFAEC;
+                img{
+                    background: #D6F5D8;
+                }
+                &:hover{
+                    background: #7FD178;
+                    transition: background .5s;
+                }
+            }
+            .photography{
+                background: #E2F7FE;
+                img{
+                    background: #C6EEFE;
+                }
+                &:hover{
+                    background: #61B8EB;
+                    transition: background .5s;
+                }
+            }
+            .health{
+                background: #FCF3EA;
+                img{
+                    background: #F0DCCD;
+                }
+                &:hover{
+                    background: #E8913E;
+                    transition: background .5s;
+                }
+            }
+            .technology{
+                background: #EFEEF6;
+                img{
+                    background: #E1DDFC;
+                }
+                &:hover{
+                    background: #51459F;
+                    transition: background .5s;
+                }
+            }
+        }
+    }
+}

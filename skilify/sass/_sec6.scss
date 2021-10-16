@@ -1,0 +1,105 @@
+.sec6{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: #EFEFF5;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    .sec6-container{
+        width: 80%;
+        .row1{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            .left{
+                h2{
+                    font-size: 40px;
+
+                }
+            }
+            .right{
+                display: flex;
+                .but{
+                    border-radius: 4px;
+                    width: 50px;
+                    height: 50px;
+                    text-align: center;
+                    background: #fff;
+                    color: #909090;
+                    margin-left: 20px;
+                    cursor: pointer;
+                    i{
+                        margin-top: 17px;
+                    }
+                    &:hover{
+                        color: #E8913E;
+                        transition: .5s;
+                    }
+                }
+            }
+        }
+        .row2{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            margin-top: 50px;
+            .box{
+                width: 560px;
+                height: 182px;
+                background: #fff;
+                border-top-right-radius: 50px;
+                border-left: 4px solid #fff;
+                &:hover{
+                    border-color: #E8913E;
+                    transition: .5s;
+                }
+                .box-top{
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 0px 20px;
+                    align-items: center;
+                    margin-top: 20px;
+                    .blt{
+                        display: flex;
+                        align-items: center;
+                        .img{
+                            margin-right: 10px;
+                            img{
+                                width: 60px;
+                                height: 60px;
+                            }
+                        }
+                        .name{
+                            h3{
+                                font-size: 22px;
+                                color: #5f5982;
+                            }
+                            h5{
+                                font-size: 16px;
+                                color: #91929a;
+                                margin-top: 5px;
+                            }
+                        }
+                    }
+                    .brt{
+                        i{
+                            color: #E9B553;
+                        }
+                    }
+                }
+                p{
+                    font-size: 18px;
+                    color: #5f5982;
+                    margin-left: 20px;
+                    margin-top: 25px;
+                }
+            }
+            .br{
+                width: 560px;
+                height: 182px;
+                background: #fff;
+                border-top-right-radius: 50px;
+            }
+        }
+    }
+}
