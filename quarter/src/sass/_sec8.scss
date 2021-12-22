@@ -1,0 +1,87 @@
+.sec8 {
+    h6 {
+        padding: unset;
+        width: 143px;
+        padding: 10px 0px;
+    }
+    h1 {
+        font-weight: bold;
+    }
+    .items {
+        .item {
+            width: 370px;
+            height: 485px;
+            .imgbox {
+                width: 370px;
+                height: 260px;
+                img {
+                    width: 370px;
+                    height: 260px;
+                    margin-left: -13px;
+                }
+            }
+            .infos {
+                margin: 20px 0px;
+                margin-left: 5px;
+                .col-4 {
+                    i {
+                        color: #ff5a3c;
+                        margin-right: 5px;
+                    }
+                    a {
+                        color: #5c727d;
+                        text-decoration: none;
+                        font-size: 14px;
+                        transition: 0.3s;
+                        &:hover {
+                            color: #ff5a3c;
+                        }
+                    }
+                }
+            }
+            .title {
+                margin-left: 10px;
+                margin-bottom: 20px;
+                a {
+                    text-decoration: none;
+                    text-transform: capitalize;
+                    font-size: 22px;
+                    color: #000;
+                    font-weight: bold;
+                    transition: .3s;
+                    &:hover{
+                        color: #ff5a3c;
+                    }
+                }
+            }
+            .line{
+                margin: 0px 10px;
+                width: 320px;
+                height: 1px;
+                background: rgb(196, 195, 195);
+            }
+            .more{
+                margin: 20px 20px;
+                .date{
+                    margin-left: -20px;
+                    span{
+                        font-size: 14px;
+                        color: #5c727d;
+                        i{
+                            color: #ff5a3c;
+                            margin-right: 5px;
+                        }
+                    }
+                }
+                .link{
+                    text-align: right;
+                    a{
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        color: #ff5a3c;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,177 @@
+.sec4 {
+    .feature {
+        margin-top: 50px;
+        width: 429px;
+        height: 690px;
+        box-shadow: -1px -4px 5px 10px rgba(0, 0, 0, 0.11);
+        -webkit-box-shadow: -1px -4px 5px 10px rgba(0, 0, 0, 0.11);
+        -moz-box-shadow: -1px -4px 5px 10px rgba(0, 0, 0, 0.11);
+        .imgbox {
+            width: 429px;
+            height: 360px;
+            position: relative;
+            img {
+                width: 429px;
+                height: 360px;
+                margin-left: -13px;
+            }
+            .rent {
+                padding: 3px 15px 0px;
+                background: #77c720;
+                text-transform: uppercase;
+                color: #fff;
+                font-size: 13px;
+                padding-bottom: 4px;
+                position: absolute;
+                right: 20px;
+                top: 20px;
+            }
+            .sale {
+                padding: 3px 15px 0px;
+                background: #ff5a3c;
+                text-transform: uppercase;
+                color: #fff;
+                font-size: 13px;
+                padding-bottom: 4px;
+                position: absolute;
+                right: 20px;
+                top: 20px;
+            }
+            .info {
+                position: relative;
+                top: -50px;
+                .location {
+                    font-size: 14px;
+                    a {
+                        text-decoration: none;
+                        color: #fff;
+                        transition: 0.3s;
+                        &:hover {
+                            color: #ff5a3c;
+                        }
+                    }
+                }
+                .detail {
+                    margin-left: 80px;
+                    .photo {
+                        margin-right: 20px;
+                        color: #fff;
+                        width: 50px;
+                        height: 30px;
+                        font-size: 14px;
+                        background: rgba(231, 229, 229, 0.459);
+                        padding-top: 3px;
+                        cursor: pointer;
+                        i {
+                            margin-right: 3px;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+        .price {
+            font-size: 18px;
+            color: #ff5a3c;
+            font-weight: bold;
+            margin-left: 20px;
+            margin-top: 30px;
+            margin-bottom: unset;
+            span {
+                font-size: 14px;
+                font-weight: normal;
+            }
+        }
+        .title {
+            margin: 10px 0px;
+            margin-left: 20px;
+            a {
+                font-size: 22px;
+                text-transform: capitalize;
+                text-decoration: none;
+                color: #071c1f;
+                font-weight: bold;
+                transition: 0.3s;
+                &:hover {
+                    color: #ff5a3c;
+                }
+            }
+        }
+        .text {
+            margin-left: 20px;
+            text-transform: capitalize;
+            color: #5c727d;
+            font-size: 14px;
+            margin-bottom: 10px;
+            line-height: 24px;
+        }
+        .service {
+            .col {
+                font-size: 16px;
+            }
+            .bath {
+                border-left: 1px solid #5c727d;
+                border-right: 1px solid #5c727d;
+            }
+        }
+        .product-info {
+            margin: 20px 20px;
+            .owner {
+                .img {
+                    img {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                    }
+                }
+                .name {
+                    margin-left: -130px;
+                    h4 {
+                        font-size: 14px;
+                        font-weight: bold;
+                        transition: 0.3s;
+                        cursor: pointer;
+                        &:hover {
+                            color: #ff5a3c;
+                        }
+                    }
+                    h6 {
+                        font-size: 12px;
+                        color: #5c727d;
+                        background: unset;
+                        margin: unset;
+                        padding: unset;
+                        text-align: left;
+                    }
+                }
+            }
+            .icons {
+                margin-right: -90px;
+                i {
+                    font-size: 14px;
+                }
+                .col-1 {
+                    background: #f3f6f8;
+                    color: #5c727d;
+                    margin-right: 10px;
+                    padding-right: 25px;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    transition: 0.3s;
+                    cursor: pointer;
+                    border-radius: 5px;
+                    &:hover {
+                        color: #ff5a3c;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 600px){
+    .sec4{
+        background: red;
+    }
+}

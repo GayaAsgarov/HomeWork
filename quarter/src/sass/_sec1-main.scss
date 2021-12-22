@@ -1,0 +1,80 @@
+.mybutton{
+    margin-top: 60px;
+    margin-bottom: 20px;
+    button{
+        padding: 15px 30px;
+        margin-right: 10px;
+        cursor: pointer;
+        background: #ff5a3c;
+        &:hover{
+            background: #ff5a3c;
+            color: #fff;
+        }
+    }
+}
+
+.inputs{
+    background: #F3F6F7;
+}
+
+.row1{
+    padding-top: 40px;
+    select{
+        width: 340px;
+        height: 60px;
+        border: 1px solid rgb(187, 185, 185);
+        outline: none;margin-left: 20px;
+        
+    }
+    .mid{
+        margin: 0px 110px;
+    }
+}
+
+.row2{
+    margin-top: 30px;
+    select{
+        width: 340px;
+        height: 60px;
+        border: 1px solid rgb(187, 185, 185);
+        outline: none;
+        margin-left: 32px;
+        
+    }
+    input{
+        width: 340px;
+        height: 60px;
+        border: 1px solid rgb(187, 185, 185);
+        outline: none;
+    }
+    .mid{
+        margin: 0px 110px;
+    }
+    .last{
+        margin-left: 20px;
+    }
+}
+
+.typerange{
+    margin: 40px 0px;
+    margin-left: 20px;
+    width: 1260px !important;
+}
+
+.row4{
+    button{
+        font-size: 16px;
+        color: #fff;
+        background: #ff5a3c;
+        width: 233.58px;
+        height: 60px;
+        margin: 0px auto;
+        border: 1px solid #ff5a3c;
+        transition: .5s;
+        &:hover{
+            background: #fff;
+            color: #000;
+            border-color: #000;
+        }
+    }
+}

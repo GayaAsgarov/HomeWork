@@ -1,0 +1,68 @@
+.sec6 {
+    h6 {
+        width: 140px;
+        padding: unset;
+        padding: 10px 0px;
+    }
+    .box {
+        width: 270px;
+        height: 244px;
+        background: #fff;
+        border-radius: 15px;
+        position: relative;
+        transition: 0.5s;
+        box-shadow: 0px -2px 13px 9px rgba(182, 172, 172, 0.44);
+        -webkit-box-shadow: 0px -2px 13px 9px rgba(182, 172, 172, 0.44);
+        -moz-box-shadow: 0px -2px 13px 9px rgba(182, 172, 172, 0.44);
+        &:hover {
+            background: #ff5a3c;
+            cursor: pointer;
+            h2 {
+                color: #fff;
+            }
+            .arrow {
+                i {
+                    color: #ff5a3c;
+                }
+            }
+        }
+        .myicon {
+            width: 100px;
+            height: 100px;
+            background: #fff2f0;
+            color: #ff5a3c;
+            border-radius: 50%;
+            text-align: center;
+            margin: 30px auto;
+            i {
+                font-size: 60px;
+                margin-top: 20px;
+            }
+        }
+        h2 {
+            font-size: 22px;
+            color: #000;
+            text-align: center;
+        }
+        .arrow {
+            width: 45px;
+            height: 45px;
+            background: chartreuse;
+            text-align: center;
+            border-radius: 50%;
+            position: absolute;
+            left: 41%;
+            bottom: -20px;
+            background: #fff;
+            box-shadow: 0px -2px 13px 9px rgba(182, 172, 172, 0.44);
+            -webkit-box-shadow: 0px -2px 13px 9px rgba(182, 172, 172, 0.44);
+            -moz-box-shadow: 0px -2px 13px 9px rgba(182, 172, 172, 0.44);
+            a {
+                color: #000;
+                i {
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+}

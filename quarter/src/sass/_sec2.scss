@@ -1,0 +1,120 @@
+h6 {
+    width: 103.73px;
+    font-size: 16px;
+    background: #fdf0ed;
+    color: #ec6648;
+    text-align: center;
+    padding: 10px 0px;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 44px;
+    text-align: center;
+}
+
+.sec2imgman {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    position: absolute;
+    left: 85%;
+    top: 20px;
+}
+
+.item {
+    height: 600px;
+    width: 400px;
+    box-shadow: 3px 1px 26px 8px rgba(197, 189, 189, 0.87);
+    -webkit-box-shadow: 3px 1px 26px 8px rgba(197, 189, 189, 0.87);
+    -moz-box-shadow: 3px 1px 26px 8px rgba(197, 189, 189, 0.87);
+    .box {
+        position: relative;
+        width: 400px;
+        height: 280px;
+        background: url(../img/1.jpeg) no-repeat;
+        background-size: cover;
+        margin-left: -12px;
+    }
+    p {
+        font-size: 16px;
+        color: #ff5a3c;
+        padding-left: 20px;
+        margin: 15px 0px;
+    }
+    .titl {
+        list-style: none;
+        padding-left: 20px;
+        margin-bottom: 15px;
+        a {
+            text-decoration: none;
+            font-size: 22px;
+            color: #000;
+            font-weight: 500;
+            transition: 0.5s;
+            &:hover {
+                color: #ff5a3c;
+            }
+        }
+    }
+}
+
+.loc {
+    margin-left: 20px;
+    font-size: 14px;
+    a {
+        font-size: 14px;
+        color: #5c727d;
+        text-decoration: none;
+        transition: 0.3s;
+        &:hover {
+            color: #ff5a3c;
+        }
+        i {
+            color: #ff5a3c;
+            margin-right: 10px;
+        }
+    }
+}
+
+.service {
+    margin: 20px 0px;
+    margin-left: 20px;
+    display: flex;
+    div {
+        margin-right: 20px;
+        font-size: 14px;
+        color: #5c727d;
+    }
+}
+
+.lnks {
+    margin-left: 20px;
+    display: flex;
+    margin-bottom: 30px;
+    div {
+        padding: 5px 10px;
+        background: rgb(223, 221, 221);
+        margin-right: 25px;
+        transition: 0.3s;
+        cursor: pointer;
+        &:hover {
+            background: #ff5a3c;
+            color: #fff;
+        }
+    }
+}
+
+h5 {
+    font-size: 18px;
+    color: #ff5a3c;
+    margin-left: 20px;
+    span {
+        font-size: 14px;
+        font-weight: normal;
+    }
+}

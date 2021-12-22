@@ -1,0 +1,64 @@
+.sec1container{
+    background: url(../img/11.jpg) no-repeat;
+    background-size: cover;
+    padding-bottom: 20px;
+}
+
+.row{
+    padding: 2px 0px;
+    align-items: center;
+}
+
+.col1{
+    font-size: 14px;
+    a{
+        i{
+            margin-right: 10px;
+            color: #ff5a3c;
+        }
+    }
+}
+
+
+.dropdown:hover{
+    .btn{
+        background: transparent;
+    }
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; // remove the gap so it doesn't close
+ }
+
+ .dropdown-toggle::after{
+     display: none;
+ }
+
+ .dropBut{
+     background: transparent;
+     font-size: 14px;
+     color: #fff;
+     border: none;
+     padding: unset;
+     i{
+         color: #ff5a3c;
+     }
+ }
+
+ .dropdown-menu{
+     .dropdown-item:hover{
+         color: #ff5a3c;
+         background: none;
+     }
+ }
+
+ .contacts{
+     li{
+         list-style: none;
+     }
+ }
+ .cont1{
+     width: 100%;
+     border-bottom: 2px solid #5D617E;
+ }
